@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.Shell;
-//using OpenInAbracadabra.Options.Abracadabra;
-//using OpenInApp.Common.Helpers;
-//using OpenInApp.Menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -13,13 +10,12 @@ using static System.Environment;
 
 namespace QuickLaunchFiddler.Commands
 {
-    internal sealed class QuickButtonCommand
+    internal sealed partial class QuickButtonCommand
     {
-        public const int CommandId = 0x0100;
-
+        public const int CommandId = 0x0100;//gregt PackageIds.QuickButtonCommandId
         public static readonly Guid CommandSet = new Guid("7aaba3a9-97d0-41d2-b4c4-b543912979a0");//gregt PackageGuids.guidQuickButtonCommandPackageCmdSetString;
-
         private readonly Package package;
+        private IServiceProvider ServiceProvider => this.package;
 
         private QuickButtonCommand(Package package)
         {
@@ -30,49 +26,30 @@ namespace QuickLaunchFiddler.Commands
 
             this.package = package;
 
-            OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
+            var commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
+
             if (commandService != null)
             {
-                CommandID menuCommandID = new CommandID(CommandSet, CommandId);
-                MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+                var menuCommandId = new CommandID(CommandSet, CommandId);
+                var menuItem = new MenuCommand(this.StartApplication, menuCommandId);
                 commandService.AddCommand(menuItem);
             }
         }
 
-        private void StartNotepad(object sender, EventArgs e)
+        private void StartApplication(object sender, EventArgs e)
         {
-            //Process proc = new Process();
-            //proc.StartInfo.FileName = "notepad.exe";
-            //proc.Start();
-
             var actualPathToExe = GetActualPathToExe();
             InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
         }
 
-        public static QuickButtonCommand Instance
-        {
-            get;
-            private set;
-        }
-
-        private IServiceProvider ServiceProvider
-        {
-            get
-            {
-                return this.package;
-            }
-        }
+        public static QuickButtonCommand Instance { get; private set; }
 
         public static void Initialize(Package package)
         {
             Instance = new QuickButtonCommand(package);
         }
 
-
-        public static void InvokeCommand(
-            string executableFullPath,
-            bool useShellExecute,
-            bool processWithinProcess)
+        public static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)//gregt extract
         {
             string fileName;
             string workingDirectory = string.Empty;
@@ -90,7 +67,7 @@ namespace QuickLaunchFiddler.Commands
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
-        private static void InvokeProcess(string arguments, string fileName, bool useShellExecute, string workingDirectory, bool processWithinProcess)
+        private static void InvokeProcess(string arguments, string fileName, bool useShellExecute, string workingDirectory, bool processWithinProcess)//gregt extract
         {
             var start = new ProcessStartInfo()
             {
@@ -132,10 +109,6 @@ namespace QuickLaunchFiddler.Commands
             }
         }
 
-
-
-
-
         public static string GetActualPathToExe()
         {
             var searchPaths = GetSearchPathsForThirdPartyExe();
@@ -150,8 +123,6 @@ namespace QuickLaunchFiddler.Commands
 
             return null;
         }
-
-
 
         internal static IEnumerable<string> GetSearchPathsForThirdPartyExe()
         {
@@ -168,8 +139,7 @@ namespace QuickLaunchFiddler.Commands
             return searchPaths;
         }
 
-
-        private static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)
+        private static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)//gregt extract
         {
             var paths = new List<string>();
 
@@ -215,16 +185,7 @@ namespace QuickLaunchFiddler.Commands
             return paths;
         }
 
-
-        public enum InitialFolderType
-        {
-            None = 0,
-            LocalApplicationData = 28,
-            ProgramFilesX86 = 42,
-            Windows = 36,
-        }
-
-        private static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)
+        private static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)//gregt extract
         {
             var dPaths = new List<string>();
 
