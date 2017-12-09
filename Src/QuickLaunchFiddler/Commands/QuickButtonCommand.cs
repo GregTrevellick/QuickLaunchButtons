@@ -1,11 +1,9 @@
 ﻿using System;
 using System.ComponentModel.Design;
-using System.Globalization;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
 using System.Diagnostics;
+using Microsoft.VisualStudio.Shell;
 
-namespace QuickLaunchFiddler
+namespace QuickLaunchFiddler.Commands
 {
     /// <summary>
     /// Command handler
