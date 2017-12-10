@@ -1,13 +1,11 @@
-﻿using QuickLaunch.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
-using static System.Environment;
 
-namespace QuickLaunch.Fiddler.Commands
+namespace QuickLaunch.Common
 {
     public class QuickButtonCommandHelper
     {
@@ -120,8 +118,8 @@ namespace QuickLaunch.Fiddler.Commands
                 var initialFolderPaths = new List<string>();
                 foreach (var initialFolder in initialFolders)
                 {
-                    var specialFolder = (SpecialFolder)initialFolder;
-                    var initialFolderPath = GetFolderPath(specialFolder);
+                    var specialFolder = (Environment.SpecialFolder)initialFolder;
+                    var initialFolderPath = Environment.GetFolderPath(specialFolder);
                     initialFolderPaths.Add(initialFolderPath);
                     //if x86 add in the non-x86 too
                     if (initialFolder == InitialFolderType.ProgramFilesX86)

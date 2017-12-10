@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Design;
+using QuickLaunch.Common;
 
 namespace QuickLaunch.Fiddler.Commands
 {

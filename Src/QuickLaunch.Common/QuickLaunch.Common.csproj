@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="InitialFolderType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickButtonCommandHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
