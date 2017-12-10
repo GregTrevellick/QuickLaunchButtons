@@ -7,12 +7,12 @@ namespace QuickLaunchFiddler
 {
     static class Vsix
     {
-        public const string Id = "QuickLaunchFiddler.8848b323-a859-40fa-88ff-ae80d5ad6198";
+        public const string Id = "8848b323-a859-40fa-88ff-ae80d5ad6198";
         public const string Name = "QuickLaunchFiddler";
-        public const string Description = @"Empty VSIX Project.";
+        public const string Description = @"Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer or Code Editor window.";
         public const string Language = "en-US";
-        public const string Version = "1.0";
+        public const string Version = "1.0.1";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "";
+        public const string Tags = "xml, xmlspy, altova, xsd, xslt, open, open in";
     }
 }
