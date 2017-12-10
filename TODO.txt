@@ -17,3 +17,6 @@ services
 control panel
 iis
 recycle bin
+elmah
+log4net.log
+iis reset
