@@ -1,0 +1,4 @@
+task manager
+evtvwr
+services
+ctl panel
