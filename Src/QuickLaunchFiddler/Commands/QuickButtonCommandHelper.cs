@@ -11,7 +11,13 @@ namespace QuickLaunch.Fiddler.Commands
 {
     public class QuickButtonCommandHelper
     {
-        public static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)//gregt extract
+        public static void InvokeApplication(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        {
+            var actualPathToExe = GetActualPathToExe(secondaryFilePathSegment, executableFileToBrowseFor);
+            InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
+        }
+
+        private static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)//gregt extract
         {
             string fileName;
             string workingDirectory = string.Empty;
@@ -29,7 +35,7 @@ namespace QuickLaunch.Fiddler.Commands
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
-        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        private static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
         {
             var searchPaths = QuickButtonCommandHelper.GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor);
 
@@ -44,7 +50,7 @@ namespace QuickLaunch.Fiddler.Commands
             return null;
         }
 
-        internal static IEnumerable<string> GetSearchPathsForThirdPartyExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        private static IEnumerable<string> GetSearchPathsForThirdPartyExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
         {
             var searchPaths = new List<string>();
 
@@ -98,7 +104,7 @@ namespace QuickLaunch.Fiddler.Commands
             }
         }
 
-        public static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)//gregt extract
+        private static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)//gregt extract
         {
             var paths = new List<string>();
 
@@ -144,7 +150,7 @@ namespace QuickLaunch.Fiddler.Commands
             return paths;
         }
 
-        public static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)//gregt extract
+        private static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)//gregt extract
         {
             var dPaths = new List<string>();
 
