@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunchFiddler", "QuickLaunchFiddler\QuickLaunchFiddler.csproj", "{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Fiddler", "QuickLaunchFiddler\QuickLaunch.Fiddler.csproj", "{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A967F49-3214-48A9-B5C7-077D7FA75F6B}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\LICENSE.txt = ..\LICENSE.txt
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Common", "QuickLaunch.Common\QuickLaunch.Common.csproj", "{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.Shell;
+﻿using QuickLaunch.Common;
+using Microsoft.VisualStudio.Shell;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using static System.Environment;
 
-namespace QuickLaunchFiddler.Commands
+namespace QuickLaunch.Fiddler.Commands
 {
     internal sealed partial class QuickButtonCommand
     {

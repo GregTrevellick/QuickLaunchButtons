@@ -1,10 +1,9 @@
-﻿using Microsoft.VisualStudio.Shell;
-using QuickLaunchFiddler.Commands;
-using System;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
+using Microsoft.VisualStudio.Shell;
+using QuickLaunch.Fiddler.Commands;
 
-namespace QuickLaunchFiddler
+namespace QuickLaunch.Fiddler
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration(productName: "#110", productDetails: "#112", productId: Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
