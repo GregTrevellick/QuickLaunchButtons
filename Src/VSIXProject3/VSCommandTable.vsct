@@ -2,6 +2,7 @@
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <Extern href="stdidcmd.h"/>
+
   <Extern href="vsshlids.h"/>
 
   <Commands package="guidQuickButtonCommandPackage">
@@ -10,12 +11,12 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Test Toolbar4</ButtonText>
-          <CommandName>Test Toolbar4</CommandName>
+          <ButtonText>Test Toolbar3</ButtonText>
+          <CommandName>Test Toolbar3</CommandName>
         </Strings>
       </Menu>
     </Menus>
-    
+
     <Groups>
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
@@ -29,22 +30,20 @@
     </Groups>
 
     <Buttons>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
+      <!--<Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Launch Fiddler</ButtonText>
+          <ButtonText>Invoke QuickButtonCommand</ButtonText>
         </Strings>
-      </Button>
-
+      </Button>-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Invoke QuickButtonCommand4</ButtonText>
+          <ButtonText>Invoke QuickButtonCommand3</ButtonText>
         </Strings>
       </Button>
-      
     </Buttons>
 
     <Bitmaps>
@@ -53,9 +52,9 @@
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="guidQuickButtonCommandPackage" value="{fbde4ce1-b539-4eb7-af0b-8b876f24a84d}" />
+    <GuidSymbol name="guidQuickButtonCommandPackage" value="{462b1151-d39e-4099-b947-7702b6b60e9b}" />
 
-    <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
+    <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{ea775f15-152c-46d2-b8c1-7819c9fb5bff}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="QuickButtonCommandId" value="0x0100" />
 
@@ -64,7 +63,7 @@
 
     </GuidSymbol>
 
-    <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
+    <GuidSymbol name="guidImages" value="{bc7d8ca2-3ee8-4937-adea-7bdb122b2124}" >
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />
