@@ -15,7 +15,7 @@ namespace QuickLaunch.Common
             InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
         }
 
-        private static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)//gregt extract
+        private static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)
         {
             string fileName;
             string workingDirectory = string.Empty;
@@ -60,7 +60,7 @@ namespace QuickLaunch.Common
             return searchPaths;
         }
 
-        private static void InvokeProcess(string arguments, string fileName, bool useShellExecute, string workingDirectory, bool processWithinProcess)//gregt extract
+        private static void InvokeProcess(string arguments, string fileName, bool useShellExecute, string workingDirectory, bool processWithinProcess)
         {
             var start = new ProcessStartInfo()
             {
@@ -102,7 +102,7 @@ namespace QuickLaunch.Common
             }
         }
 
-        private static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)//gregt extract
+        private static IList<string> GetSpecialFoldersPlusThirdPartyExePath(string executableFileToBrowseFor, string secondaryFilePathSegment)
         {
             var paths = new List<string>();
 
@@ -148,7 +148,7 @@ namespace QuickLaunch.Common
             return paths;
         }
 
-        private static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)//gregt extract
+        private static IEnumerable<string> DoubleUpForDDrive(IEnumerable<string> searchPaths)
         {
             var dPaths = new List<string>();
 

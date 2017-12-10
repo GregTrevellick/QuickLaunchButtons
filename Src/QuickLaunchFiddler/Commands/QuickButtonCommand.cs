@@ -7,11 +7,10 @@ namespace QuickLaunch.Fiddler.Commands
 {
     internal sealed partial class QuickButtonCommand
     {
-        public const int CommandId = 0x0100;//gregt PackageIds.QuickButtonCommandId
         private readonly Package package;
         private IServiceProvider ServiceProvider => this.package;
-
-        public static readonly Guid CommandSet = new Guid("7aaba3a9-97d0-41d2-b4c4-b543912979a0");//gregt PackageGuids.guidQuickButtonCommandPackageCmdSetString;
+        public const int CommandId = PackageIds.QuickButtonCommandId;
+        public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
         public static QuickButtonCommand Instance { get; private set; }
 
         public static void Initialize(Package package)
