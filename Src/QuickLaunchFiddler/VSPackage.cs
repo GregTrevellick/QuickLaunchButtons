@@ -13,13 +13,14 @@ namespace QuickLaunch.Fiddler
     //[ProvideOptionPage(typeof(GeneralOptions), Vsix.Name, CommonConstants.CategorySubLevel, 0, 0, true)]
     public sealed class VSPackage : Package
     {
-        //public VSPackage()
-        //{
-        //    // Inside this method you can place any initialization code that does not require
-        //    // any Visual Studio service because at this point the package object is created but
-        //    // not sited yet inside Visual Studio environment. The place to do all the other
-        //    // initialization is the Initialize method.
-        //}
+        /// <summary>
+        ///Inside this method you can place any initialization code that does not require any Visual Studio service 
+        ///because at this point the package object is created but not sited yet inside Visual Studio environment. 
+        ///The place to do all the other initialization is the Initialize method.
+        /// </summary>
+        public VSPackage()
+        {
+        }
 
         protected override void Initialize()
         {
