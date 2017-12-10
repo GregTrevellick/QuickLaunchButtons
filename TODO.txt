@@ -1,4 +1,19 @@
+path to exe in options (in case not found)
+numbers for fiddler1/2/3/4
+
+
+
+
+decide single toolbar or multiple toolbars or both 
+
+
+
+
+
+wireshark
 task manager
-evtvwr
+event viewer
 services
-ctl panel
+control panel
+iis
+recycle bin
