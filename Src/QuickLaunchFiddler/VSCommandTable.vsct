@@ -11,9 +11,9 @@
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
           <!--IDE location = ?-->
-          <ButtonText>Fiddler</ButtonText><!--gregt can be deleted ?-->
+          <ButtonText>Abracadabra1</ButtonText><!--gregt can be deleted ?-->
           <!--Tool bar itself-->
-          <CommandName>Fiddler Quick Launch Toolbar</CommandName>
+          <CommandName>Abracadabra2 Quick Launch Toolbar</CommandName>
         </Strings>
       </Menu>
     </Menus>
@@ -35,7 +35,7 @@
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
-          <ButtonText>Fiddler</ButtonText>
+          <ButtonText>Abracadabra3</ButtonText>
         </Strings>
       </Button>
       <!--gregt entire button can be deleted ?-->
@@ -44,7 +44,7 @@
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <!--IDE location = ?-->
-          <ButtonText>Fiddler</ButtonText>
+          <ButtonText>Abracadabra4</ButtonText>
           <!--gregt can be deleted ?-->
         </Strings>
       </Button>
