@@ -52,7 +52,6 @@
     </Buttons>
 
     <Bitmaps>
-      <!--<Bitmap guid="guidImages" href="Resources\QuickButtonCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>-->
           <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
     </Bitmaps>
   </Commands>
