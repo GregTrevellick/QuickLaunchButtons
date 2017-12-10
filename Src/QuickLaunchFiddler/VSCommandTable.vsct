@@ -10,8 +10,11 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Test Toolbar4</ButtonText>
-          <CommandName>Test Toolbar4</CommandName>
+          <!--IDE location = ?-->
+          <ButtonText>Fiddler</ButtonText>
+          
+          <!--Tool bar itself-->
+          <CommandName>Fiddler Quick Launch Toolbar</CommandName>
         </Strings>
       </Menu>
     </Menus>
@@ -21,8 +24,7 @@
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
 
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup"
-             priority="0x0000">
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar"/>
       </Group>
 
@@ -33,15 +35,17 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Launch Fiddler</ButtonText>
+          <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
+          <ButtonText>Fiddler</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Invoke QuickButtonCommand4</ButtonText>
+        <Strings> 
+          <!--IDE location = ?-->
+          <ButtonText>Fiddler</ButtonText>
         </Strings>
       </Button>
       
