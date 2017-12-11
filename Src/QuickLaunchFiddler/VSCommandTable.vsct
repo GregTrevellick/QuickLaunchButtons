@@ -7,7 +7,7 @@
   <Commands package="guidQuickButtonCommandPackage">
 
     <Menus>
-      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar456" type="Toolbar" >
+      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
           <ButtonText>Quick Launch 1</ButtonText>
@@ -25,11 +25,11 @@
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" priority="0x0000">
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu"/>
       </Group>
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" priority="0x0000">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar456"/>
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" priority="0x0000">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar"/>
       </Group>
     </Groups>
 
@@ -43,7 +43,7 @@
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0000" type="Button">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" />
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <CommandName>cmdidTestSubCommand QuickButtonCommandId456</CommandName>
@@ -51,7 +51,7 @@
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
-        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
+        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <ButtonText>Fiddler</ButtonText>
@@ -69,10 +69,10 @@
     <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
       <IDSymbol name="IdmVsMenuTools" value="0x1020" />
       <IDSymbol name="QuickButtonCommandId456" value="0x0100" />
-      <IDSymbol name="ToolbarGroup123" value="0x1050" />
-      <IDSymbol name="QuickLaunchToolBar456" value="0x1000" />
+      <IDSymbol name="QLToolbarGroup" value="0x1050" />
+      <IDSymbol name="QuickLaunchToolBar" value="0x1000" />
       <IDSymbol name="ToolsMenuQuickLaunchSubMenu" value="0x1100"/>
-      <IDSymbol name="SubMenuGroup789" value="0x1150"/>
+      <IDSymbol name="QLSubMenuGroup" value="0x1150"/>
     </GuidSymbol>
     <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
       <IDSymbol name="bmpPic1" value="1" />
