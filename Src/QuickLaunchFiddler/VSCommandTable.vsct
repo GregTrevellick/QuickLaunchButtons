@@ -11,14 +11,12 @@
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
           <ButtonText>Quick Launch 1a</ButtonText>
-          <!--<CommandName>Quick Launch 1</CommandName>-->
         </Strings>
       </Menu>
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
         <Strings>
           <ButtonText>Quick Launch 2a</ButtonText>
-          <!--<CommandName>Quick Launch 2</CommandName>-->
         </Strings>
       </Menu>
     </Menus>
