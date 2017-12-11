@@ -20,8 +20,8 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
         <Strings>
-          <ButtonText>Sub Menu Abc</ButtonText>
-          <CommandName>Sub Menu Abc</CommandName>
+          <ButtonText>Sub Menu abc</ButtonText>
+          <CommandName>Sub Menu abc bbbbbbbbbbbbbbb</CommandName>
         </Strings>
       </Menu>
     </Menus>
@@ -61,7 +61,6 @@
         </Strings>
       </Button>
 
-      <!--gregt entire button can be deleted ?-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
@@ -89,7 +88,6 @@
       <!--submnu-->
       <IDSymbol name="SubMenuAbc" value="0x1100"/>
       <IDSymbol name="SubMenuGroup789" value="0x1150"/>
-      <!--<IDSymbol name="cmdidTestSubCommand" value="0x0105"/>-->
     </GuidSymbol>
     <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
       <IDSymbol name="bmpPic1" value="1" />
