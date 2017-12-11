@@ -10,32 +10,26 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <!--IDE location = ?-->
           <ButtonText>Abracadabra456</ButtonText>
-          <!--Tool bar itself-->
-          <CommandName>Abracadabra456 Quick Launch Toolbar</CommandName>
+          <CommandName>Quick Launch 1</CommandName>
         </Strings>
       </Menu>
-      <!--submnu-->
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
         <Strings>
           <ButtonText>Sub Menu abc</ButtonText>
-          <CommandName>Sub Menu abc bbbbbbbbbbbbbbb</CommandName>
+          <CommandName>Quick Launch 2</CommandName>
         </Strings>
       </Menu>
     </Menus>
     
     <Groups>
-      <!--Tools menu-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
-      <!--Tools menu submnu-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc"/>
       </Group>
-      <!--The tool bar-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456"/>
       </Group>
@@ -50,8 +44,6 @@
           <ButtonText>Abracadabra123a</ButtonText>
         </Strings>
       </Button>
-
-      <!--Tools menu submnu-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0000" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" />
         <Icon guid="guidImages" id="bmpPic1" />
@@ -60,17 +52,15 @@
           <ButtonText>Test Sub Command QuickButtonCommandId456</ButtonText>
         </Strings>
       </Button>
-
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <!--IDE location = ?-->
-          <ButtonText>Abracadabra123bbbbbbbb</ButtonText>
+          <ButtonText>Quick Launch 3</ButtonText>
         </Strings>
       </Button>
-      
     </Buttons>
+    
     <Bitmaps>
           <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
     </Bitmaps>
@@ -79,13 +69,10 @@
   <Symbols>
     <GuidSymbol name="guidQuickButtonCommandPackage" value="{fbde4ce1-b539-4eb7-af0b-8b876f24a84d}" />
     <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
-      <!--???-->
       <IDSymbol name="MyMenuGroup123" value="0x1020" />
       <IDSymbol name="QuickButtonCommandId456" value="0x0100" />
-      <!--???-->
       <IDSymbol name="ToolbarGroup123" value="0x1050" />
       <IDSymbol name="Toolbar456" value="0x1000" />
-      <!--submnu-->
       <IDSymbol name="SubMenuAbc" value="0x1100"/>
       <IDSymbol name="SubMenuGroup789" value="0x1150"/>
     </GuidSymbol>
