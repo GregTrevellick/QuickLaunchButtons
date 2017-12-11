@@ -9,7 +9,7 @@ namespace QuickLaunch.Fiddler.Commands
     {
         private readonly Package package;
         private IServiceProvider ServiceProvider => this.package;
-        public const int CommandId = PackageIds.QuickButtonCommandId;
+        public const int CommandId = PackageIds.QuickButtonCommandId456;
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
         public static QuickButtonCommand Instance { get; private set; }
 

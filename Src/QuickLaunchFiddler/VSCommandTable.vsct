@@ -7,45 +7,44 @@
   <Commands package="guidQuickButtonCommandPackage">
 
     <Menus>
-      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar" type="Toolbar" >
+      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
           <!--IDE location = ?-->
-          <ButtonText>Abracadabra1</ButtonText><!--gregt can be deleted ?-->
+          <ButtonText>Abracadabra456</ButtonText>
           <!--Tool bar itself-->
-          <CommandName>Abracadabra2 Quick Launch Toolbar</CommandName>
+          <CommandName>Abracadabra456 Quick Launch Toolbar</CommandName>
         </Strings>
       </Menu>
     </Menus>
     
     <Groups>
       <!--Tools menu-->
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
       <!--The tool bar-->
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup" priority="0x0000">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar"/>
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" priority="0x0000">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456"/>
       </Group>
     </Groups>
 
     <Buttons>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup" />
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
-          <ButtonText>Abracadabra3</ButtonText>
+          <ButtonText>Abracadabra123a</ButtonText>
         </Strings>
       </Button>
       <!--gregt entire button can be deleted ?-->
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
-        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup" />
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
+        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <!--IDE location = ?-->
-          <ButtonText>Abracadabra4</ButtonText>
-          <!--gregt can be deleted ?-->
+          <ButtonText>Abracadabra123b</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -60,11 +59,11 @@
     <GuidSymbol name="guidQuickButtonCommandPackage" value="{fbde4ce1-b539-4eb7-af0b-8b876f24a84d}" />
     <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
       <!--???-->
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="QuickButtonCommandId" value="0x0100" />
+      <IDSymbol name="MyMenuGroup123" value="0x1020" />
+      <IDSymbol name="QuickButtonCommandId456" value="0x0100" />
       <!--???-->
-      <IDSymbol name="Toolbar" value="0x1000" />
-      <IDSymbol name="ToolbarGroup" value="0x1050" />
+      <IDSymbol name="ToolbarGroup123" value="0x1050" />
+      <IDSymbol name="Toolbar456" value="0x1000" />
     </GuidSymbol>
     <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
       <IDSymbol name="bmpPic1" value="1" />

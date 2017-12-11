@@ -24,10 +24,10 @@ namespace QuickLaunch.Fiddler
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int MyMenuGroup = 0x1020;
-        public const int QuickButtonCommandId = 0x0100;
-        public const int Toolbar = 0x1000;
-        public const int ToolbarGroup = 0x1050;
+        public const int MyMenuGroup123 = 0x1020;
+        public const int QuickButtonCommandId456 = 0x0100;
+        public const int ToolbarGroup123 = 0x1050;
+        public const int Toolbar456 = 0x1000;
         public const int bmpPic1 = 0x0001;
     }
 }

@@ -44,7 +44,7 @@ namespace QuickLaunch.Common
                     return searchPath;
                 }
             }
-
+            return @"C:\Users\gtrev\AppData\Local\Programs\Fiddler\Fiddler.exe";
             return null;
         }
 
