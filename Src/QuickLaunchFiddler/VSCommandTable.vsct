@@ -35,21 +35,21 @@
 
     <Buttons>
       <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Abracadabra123a</ButtonText>
         </Strings>
       </Button>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0110" type="Button">
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Test Sub Command QuickButtonCommandId456</ButtonText>
+          <ButtonText>Test Sub Command QuickButtonCommandId</ButtonText>
         </Strings>
       </Button>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
@@ -67,7 +67,7 @@
     <GuidSymbol name="guidQuickButtonCommandPackage" value="{fbde4ce1-b539-4eb7-af0b-8b876f24a84d}" />
     <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
       <IDSymbol name="IdmVsMenuTools" value="0x1020" />
-      <IDSymbol name="QuickButtonCommandId456" value="0x0100" />
+      <IDSymbol name="QuickButtonCommandId" value="0x0100" />
       <IDSymbol name="QLToolbarGroup" value="0x1050" />
       <IDSymbol name="QuickLaunchToolBar" value="0x1000" />
       <IDSymbol name="ToolsMenuQuickLaunchSubMenu" value="0x1100"/>
