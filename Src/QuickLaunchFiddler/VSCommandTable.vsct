@@ -10,13 +10,13 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Quick Launch 1a</ButtonText>
+          <ButtonText>Quick Launch 1</ButtonText>
         </Strings>
       </Menu>
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
         <Strings>
-          <ButtonText>Quick Launch 2a</ButtonText>
+          <ButtonText>Quick Launch 2</ButtonText>
         </Strings>
       </Menu>
     </Menus>
