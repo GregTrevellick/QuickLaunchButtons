@@ -31,35 +31,27 @@
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
+      <!--Tools menu submnu-->
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" priority="0x0000">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc"/>
+      </Group>
       <!--The tool bar-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456"/>
       </Group>
-      <!--submnu-->
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" priority="0x0000">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc"/>
-      </Group>
     </Groups>
 
     <Buttons>
+      <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
           <ButtonText>Abracadabra123a</ButtonText>
         </Strings>
       </Button>
-      <!--gregt entire button can be deleted ?-->
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
-        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings> 
-          <!--IDE location = ?-->
-          <ButtonText>Abracadabra123b</ButtonText>
-        </Strings>
-      </Button>
-      <!--submnu-->
+
+      <!--Tools menu submnu-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0000" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" />
         <Icon guid="guidImages" id="bmpPic1" />
@@ -68,6 +60,17 @@
           <ButtonText>Test Sub Command QuickButtonCommandId456</ButtonText>
         </Strings>
       </Button>
+
+      <!--gregt entire button can be deleted ?-->
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0100" type="Button">
+        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings> 
+          <!--IDE location = ?-->
+          <ButtonText>Abracadabra123bbbbbbbb</ButtonText>
+        </Strings>
+      </Button>
+      
     </Buttons>
     <Bitmaps>
           <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
