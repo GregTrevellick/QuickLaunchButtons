@@ -16,6 +16,14 @@
           <CommandName>Abracadabra456 Quick Launch Toolbar</CommandName>
         </Strings>
       </Menu>
+      <!--submnu-->
+      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
+        <Strings>
+          <ButtonText>Sub Menu Abc</ButtonText>
+          <CommandName>Sub Menu Abc</CommandName>
+        </Strings>
+      </Menu>
     </Menus>
     
     <Groups>
@@ -26,6 +34,10 @@
       <!--The tool bar-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456"/>
+      </Group>
+      <!--submnu-->
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" priority="0x0000">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc"/>
       </Group>
     </Groups>
 
@@ -47,12 +59,19 @@
           <ButtonText>Abracadabra123b</ButtonText>
         </Strings>
       </Button>
+      <!--submnu-->
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0000" type="Button">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuGroup789" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <CommandName>cmdidTestSubCommand QuickButtonCommandId456</CommandName>
+          <ButtonText>Test Sub Command QuickButtonCommandId456</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
-    
     <Bitmaps>
           <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
     </Bitmaps>
-    
   </Commands>
 
   <Symbols>
@@ -64,6 +83,10 @@
       <!--???-->
       <IDSymbol name="ToolbarGroup123" value="0x1050" />
       <IDSymbol name="Toolbar456" value="0x1000" />
+      <!--submnu-->
+      <IDSymbol name="SubMenuAbc" value="0x1100"/>
+      <IDSymbol name="SubMenuGroup789" value="0x1150"/>
+      <!--<IDSymbol name="cmdidTestSubCommand" value="0x0105"/>-->
     </GuidSymbol>
     <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
       <IDSymbol name="bmpPic1" value="1" />

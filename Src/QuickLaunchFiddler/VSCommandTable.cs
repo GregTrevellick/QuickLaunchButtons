@@ -28,6 +28,8 @@ namespace QuickLaunch.Fiddler
         public const int QuickButtonCommandId456 = 0x0100;
         public const int ToolbarGroup123 = 0x1050;
         public const int Toolbar456 = 0x1000;
+        public const int SubMenuAbc = 0x1100;
+        public const int SubMenuGroup789 = 0x1150;
         public const int bmpPic1 = 0x0001;
     }
 }
