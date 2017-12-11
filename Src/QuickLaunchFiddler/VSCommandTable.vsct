@@ -46,7 +46,6 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <CommandName>cmdidTestSubCommand QuickButtonCommandId456</CommandName>
           <ButtonText>Test Sub Command QuickButtonCommandId456</ButtonText>
         </Strings>
       </Button>
