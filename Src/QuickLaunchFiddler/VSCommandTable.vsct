@@ -10,15 +10,15 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="Toolbar456" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Abracadabra456</ButtonText>
-          <CommandName>Quick Launch 1</CommandName>
+          <ButtonText>Quick Launch 1a</ButtonText>
+          <!--<CommandName>Quick Launch 1</CommandName>-->
         </Strings>
       </Menu>
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="SubMenuAbc" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="MyMenuGroup123"/>
         <Strings>
-          <ButtonText>Sub Menu abc</ButtonText>
-          <CommandName>Quick Launch 2</CommandName>
+          <ButtonText>Quick Launch 2a</ButtonText>
+          <!--<CommandName>Quick Launch 2</CommandName>-->
         </Strings>
       </Menu>
     </Menus>
@@ -56,7 +56,7 @@
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="ToolbarGroup123" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <ButtonText>Quick Launch 3</ButtonText>
+          <ButtonText>Fiddler</ButtonText>
         </Strings>
       </Button>
     </Buttons>
