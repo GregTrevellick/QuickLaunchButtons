@@ -87,9 +87,11 @@
       <ResourceName>Menus.ctmenu</ResourceName>
       <Generator>VsctGenerator</Generator>
       <LastGenOutput>VSCommandTable.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </VSCTCompile>
     <Content Include="..\..\LICENSE.txt">
       <Link>LICENSE.txt</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
   <ItemGroup>

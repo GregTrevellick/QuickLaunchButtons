@@ -2,6 +2,7 @@ path to exe in options (in case not found)
 numbers for fiddler1/2/3/4
 need low position on tools menu
 need quick launch sub-menu on tools menu
+https://docs.microsoft.com/en-gb/visualstudio/extensibility/adding-a-submenu-to-a-menu
 
 
 
