@@ -42,7 +42,7 @@
           <ButtonText>Abracadabra123a</ButtonText>
         </Strings>
       </Button>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0000" type="Button">
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId456" priority="0x0110" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
