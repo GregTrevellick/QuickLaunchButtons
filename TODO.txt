@@ -1,11 +1,8 @@
-path to exe in options (in case not found)
-numbers for fiddler1/2/3/4
-need low position on tools menu
-https://docs.microsoft.com/en-gb/visualstudio/extensibility/adding-a-submenu-to-a-menu
-
-appveyor
-
-decide single toolbar or multiple toolbars or both 
+1) path to exe in options (in case not found)
+1) numbers for fiddler1/2/3/4
+1) need low position on tools menu https://docs.microsoft.com/en-gb/visualstudio/extensibility/adding-a-submenu-to-a-menu
+1) appveyor
+2) wireshark ==> decide single toolbar or multiple toolbars or both 
 
 
 
