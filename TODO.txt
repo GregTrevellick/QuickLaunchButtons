@@ -1,5 +1,8 @@
 1) numbers for fiddler1/2/3/4
 3) wireshark ==> decide single toolbar or multiple toolbars or both 
+rename "quick launch" as already an integral part of vs
+make the toolbar appear by default after resetting experimental instance
+
 
 unit tests ?
 process in process ?
