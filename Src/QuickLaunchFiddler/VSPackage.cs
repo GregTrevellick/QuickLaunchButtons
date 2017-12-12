@@ -1,7 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
+using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Commands;
+using QuickLaunch.Fiddler.Options;
 
 namespace QuickLaunch.Fiddler
 {
@@ -10,9 +12,11 @@ namespace QuickLaunch.Fiddler
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    //[ProvideOptionPage(typeof(GeneralOptions), Vsix.Name, CommonConstants.CategorySubLevel, 0, 0, true)]
+    [ProvideOptionPage(typeof(GeneralOptions), Vsix.Name, CommonConstants.CategorySubLevel, 0, 0, true)]
     public sealed class VSPackage : Package
     {
+        public static GeneralOptions Options { get; private set; }
+
         /// <summary>
         ///Inside this method you can place any initialization code that does not require any Visual Studio service 
         ///because at this point the package object is created but not sited yet inside Visual Studio environment. 
@@ -24,6 +28,8 @@ namespace QuickLaunch.Fiddler
 
         protected override void Initialize()
         {
+            Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
+
             QuickButtonCommand.Initialize(this);
             base.Initialize();
         }

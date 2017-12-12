@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace QuickLaunch.Common
 {
-    public class QuickButtonCommandHelper
+    public class GeneralOptionsHelper
     {
         public static void InvokeApplication(string secondaryFilePathSegment, string executableFileToBrowseFor)
         {
@@ -33,9 +33,9 @@ namespace QuickLaunch.Common
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
-        private static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
         {
-            var searchPaths = QuickButtonCommandHelper.GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor);
+            var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor);
 
             foreach (var searchPath in searchPaths)
             {
