@@ -1,10 +1,12 @@
-1) path to exe in options (in case not found)
 1) numbers for fiddler1/2/3/4
 1) need low position on tools menu https://docs.microsoft.com/en-gb/visualstudio/extensibility/adding-a-submenu-to-a-menu
-2) appveyor
 3) wireshark ==> decide single toolbar or multiple toolbars or both 
 
 
+
+enum for app ?
+unit tests ?
+process in process ?
 
 
 

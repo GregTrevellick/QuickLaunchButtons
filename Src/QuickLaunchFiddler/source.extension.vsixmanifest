@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="8848b323-a859-40fa-88ff-ae80d5ad6198" Version="1.0.1" Language="en-US" Publisher="Greg Trevellick" />
-        <DisplayName>QuickLaunchFiddler</DisplayName>
+        <DisplayName>Quick Launch Fiddler</DisplayName>
         <Description xml:space="preserve">Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer or Code Editor window.</Description>
         <License>LICENSE.txt</License>
         <ReleaseNotes>https://github.com/GregTrevellick/OpenInApp.Launcher/blob/master/CHANGELOG.md</ReleaseNotes>

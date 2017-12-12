@@ -23,6 +23,5 @@ namespace QuickLaunch.Common
                 DialogResult = dialogResult
             };
         }
-
     }
 }

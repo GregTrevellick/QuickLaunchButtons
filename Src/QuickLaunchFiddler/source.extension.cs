@@ -8,7 +8,7 @@ namespace QuickLaunch.Fiddler
     static class Vsix
     {
         public const string Id = "8848b323-a859-40fa-88ff-ae80d5ad6198";
-        public const string Name = "QuickLaunchFiddler";
+        public const string Name = "Quick Launch Fiddler";
         public const string Description = @"Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer or Code Editor window.";
         public const string Language = "en-US";
         public const string Version = "1.0.1";

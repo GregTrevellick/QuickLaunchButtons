@@ -9,7 +9,8 @@ namespace QuickLaunch.Common
         public const string ActualPathToExeOptionLabelPrefix = "Application path to ";
         public const string CategorySubLevel = "General";
         public static string ContinueAnyway = "Click OK to open anyway, or CANCEL to return to Visual Studio.";
-     
+        public const string OptionsName = "Quick Launch";//Vsix.Name;
+
         public static string InformUserMissingFile(string missingFileName)
         {
             return $"The executable file for {missingFileName} does not exist.";
