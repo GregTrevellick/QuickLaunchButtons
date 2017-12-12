@@ -9,9 +9,14 @@ namespace QuickLaunch.Common
 {
     public class GeneralOptionsHelper
     {
-        public static void InvokeApplication(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        ////////////////////////public static void InvokeApplication(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        ////////////////////////{
+        ////////////////////////    var actualPathToExe = GetActualPathToExe(secondaryFilePathSegment, executableFileToBrowseFor);
+        ////////////////////////    InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
+        ////////////////////////}
+
+        public static void InvokeApplication(string actualPathToExe)
         {
-            var actualPathToExe = GetActualPathToExe(secondaryFilePathSegment, executableFileToBrowseFor);
             InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
         }
 
@@ -45,7 +50,7 @@ namespace QuickLaunch.Common
                 }
             }
 
-            //return @"C:\Users\gtrev\AppData\Local\Programs\Fiddler\Fiddler.exe";
+            ////////////////////////////////////////return @"C:\Users\gtrev\AppData\Local\Programs\Fiddler\Fiddler.exe";
             return null;
         }
 

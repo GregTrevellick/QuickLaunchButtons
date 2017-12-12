@@ -12,20 +12,20 @@ namespace QuickLaunch.Fiddler
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-  //[ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.CategorySubLevel, 0, 0, true)]
+    ////////////////////////////////////////////[ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.CategorySubLevel, 0, 0, true)]
     [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.AppFiddler, 0, 0, true)]
     public sealed class VSPackage : Package
     {
         public static GeneralOptions Options { get; private set; }
 
-        /// <summary>
-        ///Inside this method you can place any initialization code that does not require any Visual Studio service 
-        ///because at this point the package object is created but not sited yet inside Visual Studio environment. 
-        ///The place to do all the other initialization is the Initialize method.
-        /// </summary>
-        public VSPackage()
-        {
-        }
+        ///// <summary>
+        /////Inside this method you can place any initialization code that does not require any Visual Studio service 
+        /////because at this point the package object is created but not sited yet inside Visual Studio environment. 
+        /////The place to do all the other initialization is the Initialize method.
+        ///// </summary>
+        //public VSPackage()
+        //{
+        //}
 
         protected override void Initialize()
         {

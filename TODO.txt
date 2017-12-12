@@ -1,7 +1,6 @@
 1) numbers for fiddler1/2/3/4
 3) wireshark ==> decide single toolbar or multiple toolbars or both 
 
-enum for app ?
 unit tests ?
 process in process ?
 
@@ -17,3 +16,4 @@ recycle bin
 elmah
 log4net.log
 iis reset
+kdiff3

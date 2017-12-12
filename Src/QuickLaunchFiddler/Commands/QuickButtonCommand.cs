@@ -5,7 +5,8 @@ using QuickLaunch.Common;
 
 namespace QuickLaunch.Fiddler.Commands
 {
-    internal sealed partial class QuickButtonCommand
+    ////////////////////////////////////////////////////internal sealed partial class QuickButtonCommand
+    internal class QuickButtonCommand
     {
         private readonly Package package;
         private IServiceProvider ServiceProvider => this.package;
@@ -39,7 +40,7 @@ namespace QuickLaunch.Fiddler.Commands
 
         private void InvokeApplication(object sender, EventArgs e)
         {
-            GeneralOptionsHelper.InvokeApplication("Fiddler2", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix);
-        }    
+            GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe);       
+        }
     }
 }
