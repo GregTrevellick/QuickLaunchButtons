@@ -39,7 +39,7 @@ namespace QuickLaunch.Fiddler.Commands
 
         private void InvokeApplication(object sender, EventArgs e)
         {
-            GeneralOptionsHelper.InvokeApplication("Fiddler2", "Fiddler.exe");
+            GeneralOptionsHelper.InvokeApplication("Fiddler2", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix);
         }    
     }
 }

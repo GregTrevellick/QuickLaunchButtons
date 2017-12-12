@@ -9,7 +9,7 @@ namespace QuickLaunch.Common
         {
             var dialog = new OpenFileDialog
             {
-                DefaultExt = ".exe",
+                DefaultExt = CommonConstants.DefaultExecutableFileSuffix,//".exe",
                 FileName = executableFileToBrowseFor,
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
                 CheckFileExists = true

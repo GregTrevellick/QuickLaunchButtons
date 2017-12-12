@@ -6,7 +6,7 @@ namespace QuickLaunch.Fiddler.Options
 {
     public class GeneralOptions : DialogPage
     {
-        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.Fiddler;
+        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.AppFiddler;
 
         [Category(CommonConstants.CategorySubLevel)]
         [DisplayName(CommonActualPathToExeOptionLabel)]
@@ -45,7 +45,7 @@ namespace QuickLaunch.Fiddler.Options
 
                     var caption = new ConstantsForAppCommon().Caption;
 
-                    var filePrompterHelper = new FilePrompterHelper(caption, CommonConstants.Fiddler);
+                    var filePrompterHelper = new FilePrompterHelper(caption, CommonConstants.AppFiddler);
 
                     var persistOptionsDto = filePrompterHelper.PromptForActualExeFile(ActualPathToExe);
 

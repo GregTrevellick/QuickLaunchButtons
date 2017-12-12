@@ -1,7 +1,7 @@
 1) numbers for fiddler1/2/3/4
 1) need low position on tools menu https://docs.microsoft.com/en-gb/visualstudio/extensibility/adding-a-submenu-to-a-menu
 3) wireshark ==> decide single toolbar or multiple toolbars or both 
-
+gregt
 
 
 enum for app ?

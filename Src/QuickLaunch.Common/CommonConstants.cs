@@ -4,7 +4,8 @@ namespace QuickLaunch.Common
 {
     public static class CommonConstants
     {
-        public const string Fiddler = "Fiddler";
+        public const string AppFiddler = "Fiddler";
+        public const string DefaultExecutableFileSuffix = ".exe";
         public const string ActualPathToExeOptionDetailedDescription = "Specify the absolute install path for the application.";
         public const string ActualPathToExeOptionLabelPrefix = "Application path to ";
         public const string CategorySubLevel = "General";
