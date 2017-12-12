@@ -19,7 +19,7 @@ namespace QuickLaunch.Fiddler.Options
 
             if (string.IsNullOrEmpty(ActualPathToExe))
             {
-                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("gregt","gregt");
+                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("Fiddler2", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix);
             }
 
             previousActualPathToExe = ActualPathToExe;
