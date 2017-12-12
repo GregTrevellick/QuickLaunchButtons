@@ -19,7 +19,7 @@ namespace QuickLaunch.Fiddler.Options
 
             if (string.IsNullOrEmpty(ActualPathToExe))
             {
-                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("Fiddler2", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix);
+                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("Fiddler", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix, multipleSecondaryFilePathSegments: true);
             }
 
             previousActualPathToExe = ActualPathToExe;

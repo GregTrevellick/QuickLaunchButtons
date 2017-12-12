@@ -9,12 +9,6 @@ namespace QuickLaunch.Common
 {
     public class GeneralOptionsHelper
     {
-        ////////////////////////public static void InvokeApplication(string secondaryFilePathSegment, string executableFileToBrowseFor)
-        ////////////////////////{
-        ////////////////////////    var actualPathToExe = GetActualPathToExe(secondaryFilePathSegment, executableFileToBrowseFor);
-        ////////////////////////    InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
-        ////////////////////////}
-
         public static void InvokeApplication(string actualPathToExe)
         {
             InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
@@ -38,9 +32,9 @@ namespace QuickLaunch.Common
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
-        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = false)
         {
-            var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor);
+            var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor, multipleSecondaryFilePathSegments);
 
             foreach (var searchPath in searchPaths)
             {
@@ -50,11 +44,10 @@ namespace QuickLaunch.Common
                 }
             }
 
-            ////////////////////////////////////////return @"C:\Users\gtrev\AppData\Local\Programs\Fiddler\Fiddler.exe";
             return null;
         }
 
-        private static IEnumerable<string> GetSearchPathsForThirdPartyExe(string secondaryFilePathSegment, string executableFileToBrowseFor)
+        private static IEnumerable<string> GetSearchPathsForThirdPartyExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments)
         {
             var searchPaths = new List<string>();
 
@@ -62,6 +55,11 @@ namespace QuickLaunch.Common
             searchPaths.AddRange(paths);
 
             searchPaths = DoubleUpForDDrive(searchPaths).ToList();
+
+            if (multipleSecondaryFilePathSegments)
+            {
+                searchPaths = DoubleUpForMultipleSecondaryFilePathSegments(searchPaths, secondaryFilePathSegment).ToList();
+            }
 
             return searchPaths;
         }
@@ -165,6 +163,23 @@ namespace QuickLaunch.Common
             }
 
             var result = searchPaths.Union(dPaths);
+            return result;
+        }
+
+        private static IEnumerable<string> DoubleUpForMultipleSecondaryFilePathSegments(IEnumerable<string> searchPaths, string secondaryFilePathSegment)//gregt unit test reqd
+        {
+            var nbrPaths = new List<string>();
+
+            foreach (var path in searchPaths)
+            {
+                for (var i = 9; i > 0; i--)
+                {
+                    var nbrPath = path.Replace($"\\{secondaryFilePathSegment}\\", $"\\{secondaryFilePathSegment}{i}\\");
+                    nbrPaths.Add(nbrPath);
+                }
+            }
+
+            var result = searchPaths.Union(nbrPaths);
             return result;
         }
     }
