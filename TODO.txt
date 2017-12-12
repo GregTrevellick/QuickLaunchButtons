@@ -1,7 +1,5 @@
 1) numbers for fiddler1/2/3/4
 3) wireshark ==> decide single toolbar or multiple toolbars or both 
-gregt
-bitmap sprite
 
 enum for app ?
 unit tests ?
