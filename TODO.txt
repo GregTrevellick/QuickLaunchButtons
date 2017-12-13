@@ -1,6 +1,4 @@
-fiddler.exe path testing
-
-rename "quick launch" to "open" 
+options/vsix naming (rename "quick launch" to "open")
 
 make the toolbar appear by default after resetting experimental instance
 
