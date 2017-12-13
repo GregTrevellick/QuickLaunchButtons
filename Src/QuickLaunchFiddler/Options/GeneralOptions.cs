@@ -6,9 +6,9 @@ namespace QuickLaunch.Fiddler.Options
 {
     public class GeneralOptions : DialogPage
     {
-        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.AppFiddler;
+        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.AppFiddlerExeName;
 
-        [Category(CommonConstants.CategorySubLevel)]
+        ///////////////////////////////////////////////////[Category(CommonConstants.CategorySubLevel)]
         [DisplayName(CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
@@ -19,7 +19,7 @@ namespace QuickLaunch.Fiddler.Options
 
             if (string.IsNullOrEmpty(ActualPathToExe))
             {
-                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("Fiddler", CommonConstants.AppFiddler + CommonConstants.DefaultExecutableFileSuffix, multipleSecondaryFilePathSegments: true);
+                ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe("Fiddler", CommonConstants.AppFiddlerExeName + CommonConstants.DefaultExecutableFileSuffix, multipleSecondaryFilePathSegments: true);
             }
 
             previousActualPathToExe = ActualPathToExe;
@@ -45,7 +45,7 @@ namespace QuickLaunch.Fiddler.Options
 
                     var caption = new ConstantsForAppCommon().Caption;
 
-                    var filePrompterHelper = new FilePrompterHelper(caption, CommonConstants.AppFiddler);
+                    var filePrompterHelper = new FilePrompterHelper(caption, CommonConstants.AppFiddlerExeName);
 
                     var persistOptionsDto = filePrompterHelper.PromptForActualExeFile(ActualPathToExe);
 

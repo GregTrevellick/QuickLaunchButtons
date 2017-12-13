@@ -10,13 +10,15 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Quick Launch 1</ButtonText>
+          <!--text for right click show/hide tool bar-->
+          <ButtonText>Open External App1</ButtonText>
         </Strings>
       </Menu>
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools"/>
         <Strings>
-          <ButtonText>Quick Launch 2</ButtonText>
+          <!--text for parent sub-menu in tools menu-->
+          <ButtonText>Open External App2</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -39,21 +41,22 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Abracadabra123a</ButtonText>
+          <ButtonText>Fiddler1?</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Test Sub Command QuickButtonCommandId</ButtonText>
+          <ButtonText>Fiddler2?</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <ButtonText>Fiddler</ButtonText>
+          <!--mouseover text for main tool bar & primary text for button in tools > submenu-->
+          <ButtonText>Fiddler3</ButtonText>
         </Strings>
       </Button>
     </Buttons>
