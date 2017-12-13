@@ -1,8 +1,11 @@
 fiddler.exe path testing
-fiddler2345 path testing
+
 rename "quick launch" to "open" 
+
 make the toolbar appear by default after resetting experimental instance
+
 unit tests
+
 process in process ?
 
 
@@ -21,3 +24,4 @@ recycle bin
 services
 task manager
 wireshark
+slack
