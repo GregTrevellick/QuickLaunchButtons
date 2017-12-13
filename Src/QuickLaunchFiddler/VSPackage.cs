@@ -13,7 +13,7 @@ namespace QuickLaunch.Fiddler
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration(productName: "#110", productDetails: "#112", productId: Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]//gregt     [Guid(Vsix.Id)]
+    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
     [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.AppFiddler, 0, 0, true)]
     public sealed class VSPackage : Package
