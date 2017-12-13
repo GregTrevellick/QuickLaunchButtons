@@ -1,18 +1,20 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Commands;
 using QuickLaunch.Fiddler.Options;
 
 namespace QuickLaunch.Fiddler
 {
+    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
+    [ProvideAutoLoad(UIContextGuids80.NoSolution)]
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration(productName: "#110", productDetails: "#112", productId: Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
+    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]//gregt     [Guid(Vsix.Id)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    ////////////////////////////////////////////[ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.CategorySubLevel, 0, 0, true)]
     [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.OptionsName, CommonConstants.AppFiddler, 0, 0, true)]
     public sealed class VSPackage : Package
     {
