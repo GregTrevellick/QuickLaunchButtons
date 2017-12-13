@@ -3,12 +3,12 @@
     <Metadata>
         <Identity Id="8848b323-a859-40fa-88ff-ae80d5ad6198" Version="1.0.1" Language="en-US" Publisher="Greg Trevellick" />
         <DisplayName>Quick Launch Fiddler</DisplayName>
-        <Description xml:space="preserve">Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer or Code Editor window.</Description>
+        <Description xml:space="preserve">Adds toolbar button and tools menu button to launch FiddlerAdds L</Description>
         <License>LICENSE.txt</License>
-        <ReleaseNotes>https://github.com/GregTrevellick/OpenInApp.Launcher/blob/master/CHANGELOG.md</ReleaseNotes>
+        <ReleaseNotes>https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\VsixExtensionIcon_90x90.png</Icon>
         <PreviewImage>Resources\VsixExtensionPreview_175x175.png</PreviewImage>
-        <Tags>xml, xmlspy, altova, xsd, xslt, open, open in</Tags>
+        <Tags>quicklaunch, quick launch, quick, launch, fiddler</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0,16.0)" />

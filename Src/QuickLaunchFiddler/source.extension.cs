@@ -9,10 +9,10 @@ namespace QuickLaunch.Fiddler
     {
         public const string Id = "8848b323-a859-40fa-88ff-ae80d5ad6198";
         public const string Name = "Quick Launch Fiddler";
-        public const string Description = @"Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer or Code Editor window.";
+        public const string Description = @"Adds toolbar button and tools menu button to launch FiddlerAdds L";
         public const string Language = "en-US";
         public const string Version = "1.0.1";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "xml, xmlspy, altova, xsd, xslt, open, open in";
+        public const string Tags = "quicklaunch, quick launch, quick, launch, fiddler";
     }
 }

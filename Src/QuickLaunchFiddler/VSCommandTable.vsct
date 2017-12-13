@@ -10,8 +10,7 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <!--text for right click show/hide tool bar-->
-          <ButtonText>Open Fiddler1</ButtonText>
+          <ButtonText>Open Fiddler2</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -33,18 +32,11 @@
           <ButtonText>Fiddler3?</ButtonText>
         </Strings>
       </Button>
-      <!--<Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Fiddler4?</ButtonText>
-        </Strings>
-      </Button>-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <ButtonText>Fiddler5  KEEP THIS</ButtonText>
+          <ButtonText>Fiddler4</ButtonText>
         </Strings>
       </Button>
     </Buttons>
