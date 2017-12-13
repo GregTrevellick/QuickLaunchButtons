@@ -1,7 +1,5 @@
 options/vsix naming (rename "quick launch" to "open")
-
 unit tests
-
 process in process ?
 
 

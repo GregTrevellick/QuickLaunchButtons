@@ -8,7 +8,6 @@ namespace QuickLaunch.Fiddler.Options
     {
         private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.AppFiddlerExeName;
 
-        ///////////////////////////////////////////////////[Category(CommonConstants.CategorySubLevel)]
         [DisplayName(CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
