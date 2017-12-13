@@ -18,7 +18,7 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools"/>
         <Strings>
           <!--text for parent sub-menu in tools menu-->
-          <ButtonText>Open Fiddler2</ButtonText>
+          <ButtonText>Open Fiddler2 GET RID OF THIS</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -56,7 +56,7 @@
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <!--mouseover text for main tool bar & primary text for button in tools > submenu-->
-          <ButtonText>Fiddler5</ButtonText>
+          <ButtonText>Fiddler5 KEEP THIS</ButtonText>
         </Strings>
       </Button>
     </Buttons>
