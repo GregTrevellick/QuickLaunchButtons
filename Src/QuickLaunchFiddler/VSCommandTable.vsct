@@ -14,29 +14,28 @@
           <ButtonText>Open Fiddler1</ButtonText>
         </Strings>
       </Menu>
-      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" priority="0x0100" type="Menu">
+      <!--<Menu guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools"/>
         <Strings>
-          <!--text for parent sub-menu in tools menu-->
+          --><!--text for parent sub-menu in tools menu--><!--
           <ButtonText>Open Fiddler2 GET RID OF THIS</ButtonText>
         </Strings>
-      </Menu>
+      </Menu>-->
     </Menus>
     
     <Groups>
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools" priority="0x0600">
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" priority="0x0000">
+      <!--<Group guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu"/>
-      </Group>
+      </Group>-->
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" priority="0x0000">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar"/>
       </Group>
     </Groups>
 
     <Buttons>
-      <!--Tools menu command & Fiddler Quick Launch Toolbar command-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" />
         <Icon guid="guidImages" id="bmpPic1" />
@@ -45,14 +44,13 @@
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
-        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Fiddler4?</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
-        <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <ButtonText>Fiddler5  KEEP THIS</ButtonText>
