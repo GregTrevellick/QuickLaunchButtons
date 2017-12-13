@@ -33,14 +33,15 @@
           <ButtonText>Fiddler3?</ButtonText>
         </Strings>
       </Button>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
+      <!--<Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Fiddler4?</ButtonText>
         </Strings>
-      </Button>
+      </Button>-->
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <ButtonText>Fiddler5  KEEP THIS</ButtonText>
