@@ -6,15 +6,14 @@ namespace QuickLaunch.Common
     {
         public const string ActualPathToExeOptionDetailedDescription = "Specify the absolute install path for the application.";
         public const string ActualPathToExeOptionLabelPrefix = "Application path to ";
-        public const string AppFiddlerExeName = "Fiddler";//not shown in UI but used for determining the .exe to run
-        public const string CategorySubLevelFiddler = "Fiddler5";//sub-title in options (gregt)
-
-        public const string AppWiresharkExeName = "Wireshark";//not shown in UI but used for determining the .exe to run
-        public const string CategorySubLevelWireshark = "Wireshark5";//sub-title in options (gregt)
-
         public const string DefaultExecutableFileSuffix = ".exe";
-        public const string SharedTopLevelOptionsName = "Open external app3";//parental title in options (gregt)
+        public const string General = "General";
         public static string ContinueAnyway = "Click OK to open anyway, or CANCEL to return to Visual Studio.";
+
+        public const string FiddlerExeName = "Fiddler";
+        public const string FiddlerOptionsName = "Fiddler6";
+        public const string WiresharkExeName = "Wireshark";
+        public const string WiresharkOptionsName = "Wireshark6";
 
         public static string InformUserMissingFile(string missingFileName)
         {

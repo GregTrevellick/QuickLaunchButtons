@@ -15,7 +15,7 @@ namespace QuickLaunch.Fiddler
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.SharedTopLevelOptionsName, CommonConstants.CategorySubLevelFiddler, 0, 0, true)]
+    [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.FiddlerOptionsName, CommonConstants.General, 0, 0, true)]
     public sealed class VSPackage : Package
     {
         public static GeneralOptions Options { get; private set; }

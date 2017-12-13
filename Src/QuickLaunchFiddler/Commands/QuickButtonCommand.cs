@@ -5,7 +5,6 @@ using QuickLaunch.Common;
 
 namespace QuickLaunch.Fiddler.Commands
 {
-    ////////////////////////////////////////////////////internal sealed partial class QuickButtonCommand
     internal class QuickButtonCommand
     {
         private readonly Package package;

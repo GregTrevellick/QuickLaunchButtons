@@ -11,14 +11,14 @@
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
           <!--text for right click show/hide tool bar-->
-          <ButtonText>Open External App1</ButtonText>
+          <ButtonText>Open Fiddler1</ButtonText>
         </Strings>
       </Menu>
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" priority="0x0100" type="Menu">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="IdmVsMenuTools"/>
         <Strings>
           <!--text for parent sub-menu in tools menu-->
-          <ButtonText>Open External App2</ButtonText>
+          <ButtonText>Open Fiddler2</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -41,14 +41,14 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunchSubMenu" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Fiddler1?</ButtonText>
+          <ButtonText>Fiddler3?</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0110" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Fiddler2?</ButtonText>
+          <ButtonText>Fiddler4?</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
@@ -56,7 +56,7 @@
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
           <!--mouseover text for main tool bar & primary text for button in tools > submenu-->
-          <ButtonText>Fiddler3</ButtonText>
+          <ButtonText>Fiddler5</ButtonText>
         </Strings>
       </Button>
     </Buttons>
