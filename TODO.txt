@@ -17,5 +17,7 @@ log4net.log
 recycle bin
 services
 task manager
+task scheduler
 wireshark
 slack
+mstsc
