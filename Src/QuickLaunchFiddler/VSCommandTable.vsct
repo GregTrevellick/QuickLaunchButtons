@@ -55,8 +55,7 @@
         <Parent guid= "guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <!--mouseover text for main tool bar & primary text for button in tools > submenu-->
-          <ButtonText>Fiddler5 KEEP THIS</ButtonText>
+          <ButtonText>Fiddler5  KEEP THIS</ButtonText>
         </Strings>
       </Button>
     </Buttons>
