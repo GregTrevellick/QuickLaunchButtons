@@ -6,8 +6,6 @@ namespace QuickLaunch.Common
     {
         public static bool DoesActualPathToExeExist(string fullExecutableFileName)
         {
-            ////////////////////////return DoArtefactsExist(new List<string> { fullExecutableFileName });
-
             var result = true;
 
             if (string.IsNullOrEmpty(fullExecutableFileName))
@@ -24,25 +22,5 @@ namespace QuickLaunch.Common
 
             return result;
         }
-
-        //public static bool DoArtefactsExist(IEnumerable<string> fullArtefactNames)
-        //{
-        //    var result = true;
-        //    foreach (var fullArtefactName in fullArtefactNames)
-        //    {
-        //        if (string.IsNullOrEmpty(fullArtefactName))
-        //        {
-        //            result = false;
-        //        }
-        //        else
-        //        {
-        //            if (!File.Exists(fullArtefactName))
-        //            {
-        //                result = false;
-        //            }
-        //        }
-        //    }
-        //    return result;
-        //}
     }
 }

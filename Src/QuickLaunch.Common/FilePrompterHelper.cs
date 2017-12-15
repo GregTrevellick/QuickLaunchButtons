@@ -40,6 +40,15 @@ namespace QuickLaunch.Common
             return saveSettingsDto;
         }
 
+        public void InformMissingActualExeFile(string missingFileName, string optionsName)
+        {
+            MessageBox.Show(
+                CommonConstants.InformMissingActualExeFile(missingFileName, optionsName),
+                caption,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
+
         private void SetSaveSettingsDto(PersistOptionsDto saveSettingsDto, string fileName)
         {
             saveSettingsDto.ValueToPersist = fileName;

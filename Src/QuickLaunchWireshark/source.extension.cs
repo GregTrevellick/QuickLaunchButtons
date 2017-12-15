@@ -11,7 +11,7 @@ namespace QuickLaunch.Wireshark
         public const string Name = "Quick Launch Wireshark";
         public const string Description = @"Adds toolbar button and tools menu button to launch Wireshark";
         public const string Language = "en-US";
-        public const string Version = "1.0.2";
+        public const string Version = "1.0.3";
         public const string Author = "Greg Trevellick";
         public const string Tags = "quicklaunch, quick launch, quick, launch, Wireshark";
     }

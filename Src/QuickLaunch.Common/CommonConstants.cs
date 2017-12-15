@@ -15,23 +15,25 @@ namespace QuickLaunch.Common
         public const string WiresharkExeName = "Wireshark";
         public const string WiresharkOptionsName = "Wireshark1";
 
-        public static string InformUserMissingFile(string missingFileName)
-        {
-            return $"The executable file for {missingFileName} does not exist.";
-        }
-
         public static string PromptForActualExeFile(string dodgyPathToFile)
         {
-            return InformUserMissingFile(dodgyPathToFile)
+            return $"The executable file for {dodgyPathToFile} does not exist."
                 + Environment.NewLine + Environment.NewLine
                 + "Do you want to browse the for the file ?"
                 + Environment.NewLine + Environment.NewLine
                 + "Click YES to locate the file, NO to save anyway.";
         }
-        
-        public static string UnexpectedError =
-            "An unexpected error has occured. Please restart Visual Studio and re-try." + Environment.NewLine + Environment.NewLine +
-            "If the error persists please log a bug for this extension via the Visual Studio Marketplace at https://marketplace.visualstudio.com" + Environment.NewLine + Environment.NewLine +
-            "Press OK to return to Visual Studio.";
+
+        public static string InformMissingActualExeFile(string missingFileName, string optionsName)
+        {
+            return "The executable file cannot be found."
+                   + Environment.NewLine + Environment.NewLine
+                   + $"Please enter path to the file in Tools | Options | {optionsName}";
+        }
+
+        //public static string UnexpectedError =
+        //    "An unexpected error has occured. Please restart Visual Studio and re-try." + Environment.NewLine + Environment.NewLine +
+        //    "If the error persists please log a bug for this extension via the Visual Studio Marketplace at https://marketplace.visualstudio.com" + Environment.NewLine + Environment.NewLine +
+        //    "Press OK to return to Visual Studio.";
     }
 }

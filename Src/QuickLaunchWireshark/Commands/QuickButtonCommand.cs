@@ -39,7 +39,7 @@ namespace QuickLaunch.Wireshark.Commands
 
         private void InvokeApplication(object sender, EventArgs e)
         {
-            GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe);       
+            GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.WiresharkOptionsName);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace QuickLaunch.Common
 {
     public class GeneralOptionsHelper
     {
-        public static void InvokeApplication(string actualPathToExe)
+        public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
             var invokeCommand = false;
 
@@ -17,7 +17,11 @@ namespace QuickLaunch.Common
 
             if (fileNotKnown)
             {
-                new FilePrompterHelper("Path to gregt", actualPathToExe).PromptForActualExeFile(actualPathToExe);
+                var persistOptionsDto = new FilePrompterHelper(extensionName, actualPathToExe).PromptForActualExeFile(actualPathToExe);
+                if (persistOptionsDto.Persist)
+                {
+                    PersistVSToolOptions(persistOptionsDto.ValueToPersist);
+                }
 
                 var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);
 
@@ -34,6 +38,10 @@ namespace QuickLaunch.Common
             if (invokeCommand)
             {
                 InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
+            }
+            else
+            {
+                new FilePrompterHelper(extensionName, actualPathToExe).InformMissingActualExeFile(actualPathToExe, optionsName);
             }
         }
 
