@@ -11,7 +11,30 @@ namespace QuickLaunch.Common
     {
         public static void InvokeApplication(string actualPathToExe)
         {
-            InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
+            var invokeCommand = false;
+
+            var fileNotKnown = string.IsNullOrEmpty(actualPathToExe) || !File.Exists(actualPathToExe);
+
+            if (fileNotKnown)
+            {
+                new FilePrompterHelper("Path to gregt", actualPathToExe).PromptForActualExeFile(actualPathToExe);
+
+                var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);
+
+                if (fileKnown)
+                {
+                    invokeCommand = true;
+                }
+            }
+            else
+            {
+                invokeCommand = true;
+            }
+
+            if (invokeCommand)
+            {
+                InvokeCommand(actualPathToExe, useShellExecute: true, processWithinProcess: true);
+            }
         }
 
         private static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)
