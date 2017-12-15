@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Common", "QuickLaunch.Common\QuickLaunch.Common.csproj", "{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Wireshark", "QuickLaunchWireshark\QuickLaunch.Wireshark.csproj", "{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
