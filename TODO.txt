@@ -21,3 +21,23 @@ task scheduler
 wireshark
 slack
 mstsc
+
+
+
+
+
+
+What date/time is UNIX time calculated based off of? ===00:00:00 1 January 1970
+ 00:00:00 31 December 1967
+ 00:00:00 1 January 1970
+ 00:00:00 1 January 0000
+ 00:00:00 1 January, 1900
+
+
+
+ What Linux command sets a files permission?
+rights
+properties
+attrib
+chmod
+
