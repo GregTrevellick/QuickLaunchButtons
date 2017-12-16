@@ -1,5 +1,4 @@
 unit tests
-double opening / process in process ?
 
 VSMP images
 

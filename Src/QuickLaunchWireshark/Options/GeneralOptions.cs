@@ -6,7 +6,7 @@ namespace QuickLaunch.Wireshark.Options
 {
     public class GeneralOptions : DialogPage
     {
-        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.WiresharkExeName;
+        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
 
         [DisplayName(CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
