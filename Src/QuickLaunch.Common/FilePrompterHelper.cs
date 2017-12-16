@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace QuickLaunch.Common
 {
@@ -44,6 +45,18 @@ namespace QuickLaunch.Common
         {
             MessageBox.Show(
                 CommonConstants.InformMissingActualExeFile(missingFileName, optionsName),
+                caption,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
+
+        public void InformUnexpectedError(Exception ex)
+        {
+            MessageBox.Show(
+                CommonConstants.UnexpectedError +
+                   Environment.NewLine +
+                   Environment.NewLine +
+                   ex?.InnerException?.Message,
                 caption,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Question);

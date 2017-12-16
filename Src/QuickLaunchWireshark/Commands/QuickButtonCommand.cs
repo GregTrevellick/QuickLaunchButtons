@@ -24,7 +24,7 @@ namespace QuickLaunch.Wireshark.Commands
         {
             if (package == null)
             {
-                throw new ArgumentNullException(nameof(package));
+                new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(null);
             }
 
             this.package = package;
@@ -41,7 +41,14 @@ namespace QuickLaunch.Wireshark.Commands
 
         private void InvokeApplication(object sender, EventArgs e)
         {
-            GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.WiresharkOptionsName);
+            try
+            {
+                GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.WiresharkOptionsName);
+            }
+            catch (Exception ex)
+            {
+                new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(ex);
+            }
         }
 
         public static void PersistVSToolOptions(string fileName)

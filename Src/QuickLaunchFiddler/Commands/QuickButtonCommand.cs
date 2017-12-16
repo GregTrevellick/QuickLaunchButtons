@@ -24,7 +24,7 @@ namespace QuickLaunch.Fiddler.Commands
         {
             if (package == null)
             {
-                throw new ArgumentNullException(nameof(package));
+                new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(null);
             }
 
             this.package = package;
@@ -41,7 +41,14 @@ namespace QuickLaunch.Fiddler.Commands
 
         private void InvokeApplication(object sender, EventArgs e)
         {
-            GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);       
+            try
+            {
+                GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+            }
+            catch (Exception ex)
+            {
+                new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(ex);
+            }
         }
 
         public static void PersistVSToolOptions(string fileName)
