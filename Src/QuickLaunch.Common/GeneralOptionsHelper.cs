@@ -9,6 +9,9 @@ namespace QuickLaunch.Common
 {
     public class GeneralOptionsHelper
     {
+        public delegate void QuizHelperEventHandler(string actualPathToExe);
+        public static event QuizHelperEventHandler PersistHiddenOptionsQuizHelperEventHandlerEventHandler;
+
         public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
             var invokeCommand = false;
@@ -20,7 +23,7 @@ namespace QuickLaunch.Common
                 var persistOptionsDto = new FilePrompterHelper(extensionName, actualPathToExe).PromptForActualExeFile(actualPathToExe);
                 if (persistOptionsDto.Persist)
                 {
-                    PersistVSToolOptions(persistOptionsDto.ValueToPersist);
+                    PersistHiddenOptionsQuizHelperEventHandlerEventHandler?.Invoke(persistOptionsDto.ValueToPersist);
                 }
 
                 var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);

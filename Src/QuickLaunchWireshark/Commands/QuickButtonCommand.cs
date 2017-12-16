@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel.Design;
 using QuickLaunch.Common;
+using QuickLaunch.Wireshark.Options;
 
 namespace QuickLaunch.Wireshark.Commands
 {
@@ -16,6 +17,7 @@ namespace QuickLaunch.Wireshark.Commands
         public static void Initialize(Package package)
         {
             Instance = new QuickButtonCommand(package);
+            GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
         }
 
         private QuickButtonCommand(Package package)
@@ -40,6 +42,11 @@ namespace QuickLaunch.Wireshark.Commands
         private void InvokeApplication(object sender, EventArgs e)
         {
             GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.WiresharkOptionsName);
+        }
+
+        public static void PersistVSToolOptions(string fileName)
+        {
+            GeneralOptions.PersistVSToolOptions(fileName);
         }
     }
 }

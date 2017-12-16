@@ -58,7 +58,7 @@ namespace QuickLaunch.Fiddler.Options
             base.OnApply(e);
         }
 
-        public void PersistVSToolOptions(string fileName)
+        public static void PersistVSToolOptions(string fileName)
         {
             VSPackage.Options.ActualPathToExe = fileName;
             VSPackage.Options.SaveSettingsToStorage();
