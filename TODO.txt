@@ -1,7 +1,8 @@
 options/vsix naming (rename "quick launch" to "open")
 unit tests
-process in process ?
+double opening / process in process ?
 
+VSMP readme / gulp - link to wireshark website in readme
 
 
 
@@ -22,7 +23,6 @@ wireshark
 slack
 mstsc
 
-link to wireshark website in options ?
 
 
 
