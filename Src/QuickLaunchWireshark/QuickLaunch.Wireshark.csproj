@@ -81,8 +81,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ToolsMenu.png" />
     <Content Include="Resources\VsixCommandIcon_16x16.png" />
     <Content Include="Resources\VsixExtensionIcon_90x90.png" />
+    <Content Include="Resources\Toolbar.png" />
     <Content Include="Resources\VsixExtensionPreview_175x175.png" />
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>

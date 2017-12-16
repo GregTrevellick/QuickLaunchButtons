@@ -9,7 +9,9 @@ Similar "Quick Launch" VS extensions can be found [here](https://marketplace.vis
 
 [![Wireshark](Resources/VsixExtensionIcon_90x90.png)][ThirdPartyAppHomePage]
 
-![](ThirdPartyScreenShot.png)
+![](Resources/Toolbar.png)
+
+![](Resources/ToolsMenu.png)
 
 ## Use Cases
 
