@@ -2,8 +2,7 @@ options/vsix naming (rename "quick launch" to "open")
 unit tests
 double opening / process in process ?
 
-VSMP enable disable toolbar and tools menu gif
-
+VSMP images
 
 
 
@@ -11,6 +10,7 @@ VSMP enable disable toolbar and tools menu gif
 control panel
 elmah
 event viewer
+--fiddler
 iis
 iis reset
 kdiff3
@@ -19,9 +19,10 @@ recycle bin
 services
 task manager
 task scheduler
-wireshark
+--wireshark
 slack
 mstsc
+
 
 
 

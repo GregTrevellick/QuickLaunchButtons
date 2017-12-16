@@ -10,7 +10,7 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Open Wireshark2</ButtonText>
+          <ButtonText>Open Wireshark</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -29,14 +29,14 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Wireshark3?</ButtonText>
+          <ButtonText>Wireshark</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <ButtonText>Wireshark4</ButtonText>
+          <ButtonText>Wireshark</ButtonText>
         </Strings>
       </Button>
     </Buttons>

@@ -11,9 +11,9 @@ namespace QuickLaunch.Common
         public static string ContinueAnyway = "Click OK to open anyway, or CANCEL to return to Visual Studio.";
 
         public const string FiddlerExeName = "Fiddler";
-        public const string FiddlerOptionsName = "Fiddler1";
+        public const string FiddlerOptionsName = "Open Fiddler";
         public const string WiresharkExeName = "Wireshark";
-        public const string WiresharkOptionsName = "Wireshark1";
+        public const string WiresharkOptionsName = "Open Wireshark";
 
         public static string PromptForActualExeFile(string dodgyPathToFile)
         {

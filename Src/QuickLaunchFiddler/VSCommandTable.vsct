@@ -10,7 +10,7 @@
       <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
         <CommandFlag>DefaultDocked</CommandFlag>
         <Strings>
-          <ButtonText>Open Fiddler2</ButtonText>
+          <ButtonText>Open Fiddler</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -29,14 +29,14 @@
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Fiddler3?</ButtonText>
+          <ButtonText>Fiddler</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings> 
-          <ButtonText>Fiddler4</ButtonText>
+          <ButtonText>Fiddler</ButtonText>
         </Strings>
       </Button>
     </Buttons>
