@@ -1,4 +1,4 @@
-[ThirdPartyAppHomePage]: https://www.wireshark.com
+[ThirdPartyAppHomePage]: https://www.wireshark.org/
 [VisualStudioURL]: https://www.visualstudio.com/
 
 A simple extension that adds a new toolbar containing a button to directly launch [Wireshark][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
