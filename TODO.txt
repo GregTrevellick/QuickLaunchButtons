@@ -8,16 +8,16 @@ VSMP images
 control panel
 elmah
 event viewer
---fiddler
 iis
 iis reset
 kdiff3
 log4net.log
 recycle bin
 services
+ssms
+ssms profiler
 task manager
 task scheduler
---wireshark
 slack
 mstsc
 
