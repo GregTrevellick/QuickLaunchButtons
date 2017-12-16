@@ -9,7 +9,7 @@
         {
         }
 
-        public ConstantsForAppCommon(string vsixName, string vsixVersion)
+        public ConstantsForAppCommon(string vsixName, string vsixVersion)//gregt leverage this
         {
             _vsixName = vsixName;
             _vsixVersion = vsixVersion;

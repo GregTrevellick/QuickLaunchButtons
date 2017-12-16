@@ -1,3 +1,7 @@
+
+show toolbar by default
+
+
 unit tests
 
 VSMP images
