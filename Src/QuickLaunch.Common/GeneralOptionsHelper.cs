@@ -25,7 +25,7 @@ namespace QuickLaunch.Common
                 {
                     PersistHiddenOptionsQuizHelperEventHandlerEventHandler?.Invoke(persistOptionsDto.ValueToPersist);
                 }
-
+                actualPathToExe = persistOptionsDto.ValueToPersist;
                 var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);
 
                 if (fileKnown)
