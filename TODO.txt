@@ -1,4 +1,3 @@
-options/vsix naming (rename "quick launch" to "open")
 unit tests
 double opening / process in process ?
 
