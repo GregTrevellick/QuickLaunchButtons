@@ -1,11 +1,11 @@
 [ThirdPartyAppHomePage]: https://www.wireshark.org/
 [VisualStudioURL]: https://www.visualstudio.com/
 
-A simple extension that adds a new toolbar containing a button to directly launch [Wireshark][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
+A simple extension that adds a new toolbar containing a button to open [Wireshark][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
 
  - *If you like this ***free*** tool please take a few seconds out to give a star rating below*.
 
-Similar "Quick Launch" VS extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
+Similar Visual Studio extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
 
 [![Wireshark](Resources/VsixExtensionIcon_90x90.png)][ThirdPartyAppHomePage]
 
@@ -22,3 +22,7 @@ When you need to launch [Wireshark][ThirdPartyAppHomePage] on an ad-hoc basis yo
 When you need to repeatedly launch [Wireshark][ThirdPartyAppHomePage] to solve a problem you may wish to enable the toolbar, allowing instant access to launch [Wireshark][ThirdPartyAppHomePage], and once the problem is solved disable the toolbar, to avoid cluttering up the IDE.
 
 Or, of course, you may wish to keep the toolbar permanently enabled.
+
+## External Tools
+
+This extension is similar to Visual Studio's [External Tools](https://docs.microsoft.com/en-gb/visualstudio/ide/managing-external-tools) functionality. [External Tools](https://docs.microsoft.com/en-gb/visualstudio/ide/managing-external-tools) is more feature-rich (e.g allows specification of arguments) but does not associate an icon and creates a tools menu option only, not a toolbar as well.
