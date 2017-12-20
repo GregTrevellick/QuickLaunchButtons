@@ -1,9 +1,10 @@
 [ThirdPartyAppHomePage]: https://www.telerik.com/fiddler
 [VisualStudioURL]: https://www.visualstudio.com/
+[CharityWareURL]: https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/CharityWare.MD
 
 A simple extension that adds a new toolbar containing a button to open [Fiddler][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
 
- - *If you like this ***free*** tool please take a few seconds out to give a star rating below*.
+ - *If you like this ***FREE*** tool please take a few seconds out to give a star rating below and/or [help others][CharityWareURL]*.
 
 Similar Visual Studio extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
 

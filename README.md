@@ -1,12 +1,13 @@
 [VersionNumberBadgeURL]: https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInEmacs.svg
 [VSMarketplaceUrl]: https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance
+[CharityWareURL]: https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/CharityWare.MD
 
 # Quick Launch Buttons
 
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 [![Build status][AppVeyorProjectBuildStatusBadgeSvg]][AppVeyorProjectUrl]
 
-A repository containing code for use in a series of [Visual Studio][VisualStudioURL] extensions that facilitate third party applications to be launched from a new toolbar button or the Tools menu within the [Visual Studio IDE][VisualStudioURL].
+A [CharityWare][CharityWareURL] repository containing code for use in a series of [Visual Studio][VisualStudioURL] extensions that facilitate third party applications to be launched from a new toolbar button or the Tools menu within the [Visual Studio IDE][VisualStudioURL].
 
 The [Visual Studio][VisualStudioURL] extensions are officially available at the [Visual Studio Marketplace][VSMarketplaceUrl].
 
