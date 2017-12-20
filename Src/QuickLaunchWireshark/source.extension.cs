@@ -15,6 +15,6 @@ namespace QuickLaunch.Wireshark
         public const string Language = "en-US";
         public const string Version = "1.0.8";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "quicklaunch, quick launch, quick, launch, Wireshark";
+        public const string Tags = "quicklaunch, quick launch, quick, launch, Wireshark, Ethereal,";
     }
 }

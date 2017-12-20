@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 [![Build status][AppVeyorProjectBuildStatusBadgeSvg]][AppVeyorProjectUrl]
 
-A repository containing code for use in a series of [Visual Studio][VisualStudioURL] extensions that facilitate third party applications to be launched from a new toolbar button within the [Visual Studio IDE][VisualStudioURL] code editor window and / or Solution Explorer.
+A repository containing code for use in a series of [Visual Studio][VisualStudioURL] extensions that facilitate third party applications to be launched from a new toolbar button or the Tools menu within the [Visual Studio IDE][VisualStudioURL].
 
 The [Visual Studio][VisualStudioURL] extensions are officially available at the [Visual Studio Marketplace][VSMarketplaceUrl].
 
