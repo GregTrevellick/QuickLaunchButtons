@@ -1,6 +1,6 @@
 [VersionNumberBadgeURL]: https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInEmacs.svg
 [VSMarketplaceUrl]: https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance
-[CharityWareURL]: https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/CharityWare.MD
+[CharityWareURL]: https://github.com/GregTrevellick/Misc/blob/master/Misc/CharityWare.MD
 
 # Quick Launch Buttons
 

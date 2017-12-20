@@ -1,6 +1,6 @@
 [ThirdPartyAppHomePage]: https://www.telerik.com/fiddler
 [VisualStudioURL]: https://www.visualstudio.com/
-[CharityWareURL]: https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/CharityWare.MD
+[CharityWareURL]: https://github.com/GregTrevellick/Misc/blob/master/Misc/CharityWare.MD
 
 A simple extension that adds a new toolbar containing a button to open [Fiddler][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
 
