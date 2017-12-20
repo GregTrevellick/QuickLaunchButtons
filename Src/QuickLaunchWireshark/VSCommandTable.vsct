@@ -16,7 +16,7 @@
     </Menus>
     
     <Groups>
-      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" priority="0x0600">
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" priority="0x9500">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" priority="0x0000">
@@ -25,7 +25,7 @@
     </Groups>
 
     <Buttons>
-      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0600" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>

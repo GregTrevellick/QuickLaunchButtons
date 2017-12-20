@@ -1,6 +1,6 @@
 # Change log
 
-## 1.0.8
+## 1.0.10
 **2017-12-xx** 
 - [x] Initial release
   - [x] Fiddler

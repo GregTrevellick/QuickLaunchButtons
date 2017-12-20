@@ -27,7 +27,7 @@ namespace QuickLaunch.Fiddler
         public const int QuickButtonCommandId = 0x0100;
         public const int QLToolbarGroup = 0x1050;
         public const int QuickLaunchToolBar = 0x1000;
-        public const int ToolsMenuQuickLaunch = 0x1100;
+        public const int ToolsMenuQuickLaunch = 0x1800;
         public const int bmpPic1 = 0x0001;
     }
 }
