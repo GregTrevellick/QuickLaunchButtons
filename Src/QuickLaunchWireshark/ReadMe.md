@@ -1,6 +1,7 @@
 [ThirdPartyAppHomePage]: https://www.wireshark.org/
 [VisualStudioURL]: https://www.visualstudio.com/
 [CharityWareURL]: https://github.com/GregTrevellick/MiscellaneousArtefacts/wiki/Charity-Ware
+[WhyURL]: https://github.com/GregTrevellick/MiscellaneousArtefacts/wiki/Why
 
 A simple extension that adds a new toolbar containing a button to open [Wireshark][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
 
@@ -23,6 +24,8 @@ When you need to launch [Wireshark][ThirdPartyAppHomePage] on an ad-hoc basis yo
 When you need to repeatedly launch [Wireshark][ThirdPartyAppHomePage] to solve a problem you may wish to enable the toolbar, allowing instant access to launch [Wireshark][ThirdPartyAppHomePage], and once the problem is solved disable the toolbar, to avoid cluttering up the IDE.
 
 Or, of course, you may wish to keep the toolbar permanently enabled.
+
+[Why?][WhyURL]
 
 ## External Tools
 
