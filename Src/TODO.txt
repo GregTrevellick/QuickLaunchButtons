@@ -1,6 +1,5 @@
 move lower down tools menu
 show toolbar by default
-why 
 unit tests
 
 
