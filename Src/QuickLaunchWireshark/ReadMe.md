@@ -7,11 +7,11 @@ A simple extension that adds a new toolbar containing a button to open [Wireshar
 
 Similar Visual Studio extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
 
-[![Wireshark](Resources/VsixExtensionIcon_90x90.png)][ThirdPartyAppHomePage]
+![Wireshark](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchWireshark/Resources/VsixExtensionIcon_90x90.png?raw=true)
 
-![](Resources/Toolbar.png)
+![](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchWireshark/Resources/Toolbar.png?raw=true)
 
-![](Resources/ToolsMenu.png)
+![](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchWireshark/Resources/ToolsMenu.png?raw=true)
 
 ## Use Cases
 

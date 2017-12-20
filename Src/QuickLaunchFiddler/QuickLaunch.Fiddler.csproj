@@ -78,7 +78,7 @@
       <Generator>VsixManifestGenerator</Generator>
       <LastGenOutput>source.extension1.resx</LastGenOutput>
     </None>
-    <None Include="VSMP.md" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Toolbar.png" />

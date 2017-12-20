@@ -7,11 +7,11 @@ A simple extension that adds a new toolbar containing a button to open [Fiddler]
 
 Similar Visual Studio extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
 
-[![Fiddler](Resources/VsixExtensionIcon_90x90.png)][ThirdPartyAppHomePage]
+![Fiddler](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchFiddler/Resources/VsixExtensionIcon_90x90.png?raw=true)
 
-![](Resources/Toolbar.png)
+![](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchFiddler/Resources/Toolbar.png?raw=true)
 
-![](Resources/ToolsMenu.png)
+![](https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/Src/QuickLaunchFiddler/Resources/ToolsMenu.png?raw=true)
 
 ## Use Cases
 
