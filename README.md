@@ -6,6 +6,7 @@
 
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 [![Build status][AppVeyorProjectBuildStatusBadgeSvg]][AppVeyorProjectUrl]
+[![CharityWare](https://img.shields.io/badge/Charity%20Ware-Thank%20You-brightgreen.svg)][CharityWareURL]
 
 A [CharityWare][CharityWareURL] repository containing code for use in a series of [Visual Studio][VisualStudioURL] extensions that facilitate third party applications to be launched from a new toolbar button or the Tools menu within the [Visual Studio IDE][VisualStudioURL].
 
