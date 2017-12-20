@@ -44,7 +44,7 @@ In no event shall any of the third party application entities be liable for any 
 - [Visual Studio Extensibility code samples](https://github.com/visualstudioextensibility/VSX-Samples)
 - [Build 2016 Conference](https://channel9.msdn.com/Events/Build/2016/B886) 
 - [Visual Studio Toolbox](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Extensions-by-Mads-Kristensen)
-
+- [Bill Menees](http://www.menees.com/index.html)
 
 
 [AppVeyorProjectUrl]: https://ci.appveyor.com/project/GregTrevellick/quicklaunchbuttons
