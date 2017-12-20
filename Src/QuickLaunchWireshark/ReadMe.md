@@ -1,6 +1,6 @@
 [ThirdPartyAppHomePage]: https://www.wireshark.org/
 [VisualStudioURL]: https://www.visualstudio.com/
-[CharityWareURL]: https://github.com/GregTrevellick/Misc/blob/master/Misc/CharityWare.MD
+[CharityWareURL]: https://github.com/GregTrevellick/MiscellaneousArtefacts/blob/master/MiscellaneousArtefacts/CharityWare.MD
 
 A simple extension that adds a new toolbar containing a button to open [Wireshark][ThirdPartyAppHomePage], along with a corresponding Tools menu option.
 
