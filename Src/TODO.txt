@@ -1,24 +1,6 @@
 move lower down tools menu
 show toolbar by default
 why 
-
-
-
-
-Charity Ware text - add to other apps
-
-
-
-
-
-
-
-
-
-
-
-
-
 unit tests
 
 
@@ -40,4 +22,3 @@ task manager
 task scheduler
 slack
 mstsc
-
