@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Fiddler", "QuickLaunchFiddler\QuickLaunch.Fiddler.csproj", "{1DA9DDB1-4478-4E4B-AB79-DB2EF75097EE}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Common", "QuickLaunch.Common\QuickLaunch.Common.csproj", "{11CFE8FF-C3D8-4288-B16F-B8E8E33638AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Wireshark", "QuickLaunchWireshark\QuickLaunch.Wireshark.csproj", "{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickLaunch.Rating", "QuickLaunch.Rating\QuickLaunch.Rating.csproj", "{2E1E40D9-C782-4AD9-BEEB-4970B6BC7B58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0179ECFA-CC23-4C2A-9B64-1BB49D6BA573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1E40D9-C782-4AD9-BEEB-4970B6BC7B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1E40D9-C782-4AD9-BEEB-4970B6BC7B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1E40D9-C782-4AD9-BEEB-4970B6BC7B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1E40D9-C782-4AD9-BEEB-4970B6BC7B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

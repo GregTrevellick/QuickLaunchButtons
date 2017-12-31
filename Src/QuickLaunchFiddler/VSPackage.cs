@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.Shell.Interop;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Commands;
 using QuickLaunch.Fiddler.Options;
+using VsixRatingChaser.Interfaces;
 
 namespace QuickLaunch.Fiddler
 {
@@ -32,8 +33,8 @@ namespace QuickLaunch.Fiddler
         protected override void Initialize()
         {
             Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
-
-            QuickButtonCommand.Initialize(this);
+            var hiddenChaserOptions = (IRatingDetailsDto)GetDialogPage(typeof(HiddenRatingDetailsDto));
+            QuickButtonCommand.Initialize(this, hiddenChaserOptions);
             base.Initialize();
         }
     }

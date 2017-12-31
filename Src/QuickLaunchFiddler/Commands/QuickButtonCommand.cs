@@ -3,19 +3,22 @@ using System;
 using System.ComponentModel.Design;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Options;
+using VsixRatingChaser.Interfaces;
 
 namespace QuickLaunch.Fiddler.Commands
 {
     internal class QuickButtonCommand
     {
         private readonly Package package;
+        private static IRatingDetailsDto _hiddenChaserOptions;
         private IServiceProvider ServiceProvider => this.package;
         public const int CommandId = PackageIds.QuickButtonCommandId;
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
         public static QuickButtonCommand Instance { get; private set; }
 
-        public static void Initialize(Package package)
+        public static void Initialize(Package package, IRatingDetailsDto hiddenChaserOptions)
         {
+            _hiddenChaserOptions = hiddenChaserOptions;
             Instance = new QuickButtonCommand(package);
             GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
         }
@@ -44,6 +47,7 @@ namespace QuickLaunch.Fiddler.Commands
             try
             {
                 GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                ChaseRating();
             }
             catch (Exception ex)
             {
@@ -54,6 +58,12 @@ namespace QuickLaunch.Fiddler.Commands
         public static void PersistVSToolOptions(string fileName)
         {
             GeneralOptions.PersistVSToolOptions(fileName);
+        }
+
+        internal void ChaseRating( )
+        {
+            var packageRatingChaser = new PackageRatingChaser();
+            packageRatingChaser.Hunt(_hiddenChaserOptions);
         }
     }
 }
