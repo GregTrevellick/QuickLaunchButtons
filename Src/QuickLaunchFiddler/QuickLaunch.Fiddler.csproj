@@ -85,7 +85,6 @@
     <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RatingRequestScreenshot.png" />
     <Content Include="Resources\Toolbar.png" />
     <Content Include="Resources\ToolsMenu.png" />
     <Content Include="Resources\VsixCommandIcon_16x16.png">
