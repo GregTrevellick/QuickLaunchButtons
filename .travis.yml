@@ -1,2 +1,2 @@
 language: csharp
-solution: Src\QuickLaunchButtons.sln
+solution: Src/QuickLaunchButtons.sln
