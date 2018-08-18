@@ -20,9 +20,19 @@
 [![ImgBot](https://img.shields.io/badge/images-optimized-green.svg)](https://imgbot.net/)
 [![Charity Ware](https://img.shields.io/badge/charity%20ware-thank%20you-brightgreen.svg)](https://github.com/GregTrevellick/MiscellaneousArtefacts/wiki/Charity-Ware)
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
-[![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.QuickLaunchButtons.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchButtons)
-[![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.QuickLaunchButtons.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchButtons)
-[![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.QuickLaunchButtons.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchButtons)
+
+[![Visual Studio Marketplace version](https://img.shields.io/badge/-QuickLaunchFiddler-%23e2165e.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
+[![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.QuickLaunchFiddler.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
+[![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.QuickLaunchFiddler.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
+[![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.QuickLaunchFiddler.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
+
+
+[![Visual Studio Marketplace version](https://img.shields.io/badge/-QuickLaunchWireshark-%23e2165e.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
+[![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.QuickLaunchWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
+[![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.QuickLaunchWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
+[![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.QuickLaunchWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
+
+
 <!--BadgesEND-->
 
 
