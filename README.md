@@ -6,6 +6,7 @@
 # Quick Launch Buttons
 
 <!--BadgesSTART-->
+[![Read Me Synchronizer](https://img.shields.io/badge/-powered%20by%20read%20me%20synchronizer-brightgreen.svg)](https://github.com/GregTrevellick/ReadMeSynchronizer)
 <!-- Powered by https://github.com/GregTrevellick/ReadMeSynchronizer -->
 
 [![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/GregTrevellick/QuickLaunchButtons?branch=master)](https://bettercodehub.com/results/GregTrevellick/QuickLaunchButtons)
@@ -14,10 +15,22 @@
 [![GitHub top language](https://img.shields.io/github/languages/top/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![Github language count](https://img.shields.io/github/languages/count/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons/pulls)
+[![Sonar&metric=alert_status](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=alert_status)](https://sonarcloud.io/dashboard?id=QuickLaunchButtons)
+[![Sonar&metric=bugs](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=bugs)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=bugs)
+[![Sonar&metric=code_smells](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=code_smells)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=code_smells)
+[![Sonar&metric=coverage](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=coverage)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=Coverage)
+[![Sonar&metric=duplicated_lines_density](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=duplicated_lines_density)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=duplicated_lines)
+[![Sonar&metric=ncloc](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=ncloc)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=ncloc)
+[![Sonar&metric=reliability_rating](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=reliability_rating)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=reliability_rating)
+[![Sonar&metric=security_rating](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=security_rating)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=security_rating)
+[![Sonar&metric=sqale_index](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=sqale_index)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=sqale_index)
+[![Sonar&metric=sqale_rating](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=sqale_rating)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=sqale_rating)
+[![Sonar&metric=vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=vulnerabilities)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=vulnerabilities)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/e8fq3ang07ahq8yf?svg=true)](https://ci.appveyor.com/project/GregTrevellick/QuickLaunchButtons)
 [![Appveyor unit tests](https://img.shields.io/appveyor/tests/GregTrevellick/QuickLaunchButtons.svg)](https://ci.appveyor.com/project/GregTrevellick/QuickLaunchButtons/build/tests)
-[![Access Lint github](https://img.shields.io/badge/a11y-checked-green.svg)](https://www.accesslint.com)
-[![ImgBot](https://img.shields.io/badge/images-optimized-green.svg)](https://imgbot.net/)
+[![Access Lint github](https://img.shields.io/badge/a11y-checked-brightgreen.svg)](https://www.accesslint.com)
+[![ImgBot](https://img.shields.io/badge/images-optimized-brightgreen.svg)](https://imgbot.net/)
+[![Renovate Bot github](https://img.shields.io/badge/renovatebot-checked-brightgreen.svg)](https://renovatebot.com/)
 [![Charity Ware](https://img.shields.io/badge/charity%20ware-thank%20you-brightgreen.svg)](https://github.com/GregTrevellick/MiscellaneousArtefacts/wiki/Charity-Ware)
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 
