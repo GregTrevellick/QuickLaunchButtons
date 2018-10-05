@@ -14,6 +14,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons/badge)](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons)
 [![GitHub top language](https://img.shields.io/github/languages/top/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![Github language count](https://img.shields.io/github/languages/count/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
+[![GitHub issues](https://img.shields.io/github/issues-raw/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons/pulls)
 [![Sonar&metric=alert_status](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=alert_status)](https://sonarcloud.io/dashboard?id=QuickLaunchButtons)
 [![Sonar&metric=bugs](https://sonarcloud.io/api/project_badges/measure?project=QuickLaunchButtons&metric=bugs)](https://sonarcloud.io/component_measures?id=QuickLaunchButtons&metric=bugs)
