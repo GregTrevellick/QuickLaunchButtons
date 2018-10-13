@@ -14,7 +14,9 @@
 [![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/GregTrevellick/QuickLaunchButtons?branch=master)](https://bettercodehub.com/results/GregTrevellick/QuickLaunchButtons)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/def29563a15940cda03af19faac0e006)](https://www.codacy.com/project/gtrevellick/QuickLaunchButtons/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GregTrevellick/QuickLaunchButtons&amp;utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons/badge)](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons)
-[![Inspecode Report](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/report?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8)&branch=master)](https://inspecode.rocro.com/reports/github.com/GregTrevellick/QuickLaunchButtons/branch/master/summary)
+[![Inspecode Report](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/report?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8))](https://inspecode.rocro.com/reports/github.com/GregTrevellick/QuickLaunchButtons/branch/master/summary)
+
+
 [![GitHub top language](https://img.shields.io/github/languages/top/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![Github language count](https://img.shields.io/github/languages/count/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![GitHub issues](https://img.shields.io/github/issues-raw/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons/issues)
