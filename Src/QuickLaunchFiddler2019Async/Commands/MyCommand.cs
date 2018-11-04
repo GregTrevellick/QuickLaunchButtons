@@ -26,7 +26,7 @@ namespace CustomCommandSample
 
             VsShellUtilities.ShowMessageBox(
                 package,
-                $"Inside {typeof(MyCommand).FullName}.Execute()",
+                $"Inside {typeof(MyCommand).FullName}.Execute() 2",
                 nameof(MyCommand),
                 OLEMSGICON.OLEMSGICON_INFO,
                 OLEMSGBUTTON.OLEMSGBUTTON_OK,

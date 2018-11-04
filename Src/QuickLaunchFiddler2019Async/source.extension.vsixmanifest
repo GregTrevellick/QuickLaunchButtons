@@ -5,7 +5,7 @@
         <DisplayName>Custom Command Sample</DisplayName>
         <Description xml:space="preserve">Shows how to hook up a command in VS</Description>
         <MoreInfo>https://github.com/madskristensen/CustomCommandSample</MoreInfo>
-        <License>Resources\LICENSE</License>
+        <License>LICENSE.txt</License>
         <Icon>Resources\Icon128x128.png</Icon>
         <PreviewImage>Resources\Icon128x128.png</PreviewImage>
         <Tags>sample, command</Tags>
