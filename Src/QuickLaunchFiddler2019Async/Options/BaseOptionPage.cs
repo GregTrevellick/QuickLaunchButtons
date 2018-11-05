@@ -11,9 +11,9 @@ namespace QuickLaunch.Fiddler
 
         public BaseOptionPage()
         {
-#pragma warning disable VSTHRD104 // Offer async methods
+            #pragma warning disable VSTHRD104 // Offer async methods
             _model = ThreadHelper.JoinableTaskFactory.Run(BaseOptionModel<T>.CreateAsync);
-#pragma warning restore VSTHRD104 // Offer async methods
+            #pragma warning restore VSTHRD104 // Offer async methods
         }
 
         public override object AutomationObject => _model;

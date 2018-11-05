@@ -35,9 +35,9 @@ namespace QuickLaunch.Fiddler
             {
                 ThreadHelper.ThrowIfNotOnUIThread();
 
-#pragma warning disable VSTHRD104 // Offer async methods
+                #pragma warning disable VSTHRD104 // Offer async methods
                 return ThreadHelper.JoinableTaskFactory.Run(GetLiveInstanceAsync);
-#pragma warning restore VSTHRD104 // Offer async methods
+                #pragma warning restore VSTHRD104 // Offer async methods
             }
         }
 
@@ -163,10 +163,10 @@ namespace QuickLaunch.Fiddler
 
         private static async Task<ShellSettingsManager> GetSettingsManagerAsync()
         {
-#pragma warning disable VSTHRD010 
+            #pragma warning disable VSTHRD010 
             // False-positive in Threading Analyzers. Bug tracked here https://github.com/Microsoft/vs-threading/issues/230
             var svc = await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(SVsSettingsManager)) as IVsSettingsManager;
-#pragma warning restore VSTHRD010 
+            #pragma warning restore VSTHRD010 
 
             Assumes.Present(svc);
 

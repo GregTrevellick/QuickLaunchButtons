@@ -5,7 +5,12 @@
     /// </summary>
     internal class DialogPageProvider
     {
-        public class General : BaseOptionPage<GeneralOptions> { }
-        public class Other : BaseOptionPage<OtherOptions> { }
+        public class General : BaseOptionPage<GeneralOptions>
+        {
+        }
+
+        //public class Other : BaseOptionPage<OtherOptions> 
+        //{ 
+        //}
     }
 }

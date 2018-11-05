@@ -36,18 +36,15 @@ namespace QuickLaunch.Fiddler
         public void GetEm()
         {
             // Call the Instance singleton from the UI thread is easy
-            bool showMessage = OtherOptions.Instance.ShowMessage;
+            //bool showMessage = OtherOptions.Instance.ShowMessage;
 
-            if (showMessage)
+            Task.Run(async () =>
             {
-                System.Threading.Tasks.Task.Run(async () =>
-                {
-                    // Make the call to GetLiveInstanceAsync from a background thread to avoid blocking the UI thread
-                    GeneralOptions options = await GeneralOptions.GetLiveInstanceAsync();
-                    string message = options.Message;
-                    // Do something with message
-                });
-            }
+                // Make the call to GetLiveInstanceAsync from a background thread to avoid blocking the UI thread
+                GeneralOptions options = await GeneralOptions.GetLiveInstanceAsync();
+                string message = options.Message;
+                // Do something with message
+            });
         }
 
     }
