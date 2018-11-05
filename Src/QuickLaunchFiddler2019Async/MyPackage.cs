@@ -4,7 +4,7 @@ using System.Threading;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
-namespace CustomCommandSample
+namespace QuickLaunch.Fiddler
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("Custom Command Sample", "Shows how to hook up a command in VS", "1.0")]       

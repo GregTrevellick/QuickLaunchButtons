@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
-namespace CustomCommandSample
+namespace QuickLaunch.Fiddler
 {
     internal sealed class MyCommand
     {
@@ -32,5 +32,23 @@ namespace CustomCommandSample
                 OLEMSGBUTTON.OLEMSGBUTTON_OK,
                 OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
         }
+
+        public void GetEm()
+        {
+            // Call the Instance singleton from the UI thread is easy
+            bool showMessage = OtherOptions.Instance.ShowMessage;
+
+            if (showMessage)
+            {
+                System.Threading.Tasks.Task.Run(async () =>
+                {
+                    // Make the call to GetLiveInstanceAsync from a background thread to avoid blocking the UI thread
+                    GeneralOptions options = await GeneralOptions.GetLiveInstanceAsync();
+                    string message = options.Message;
+                    // Do something with message
+                });
+            }
+        }
+
     }
 }
