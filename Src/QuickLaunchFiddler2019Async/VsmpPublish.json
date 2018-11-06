@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/vsix-publish",
+  "assetFiles": [ //images used in VsmpReadMe.md
+    {
+      "pathOnDisk": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\Resources\\ReadMe_AnimatedDemo.gif",
+      "targetPath": "ReadMe_AnimatedDemo.png"
+    },
+    {
+      "pathOnDisk": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\Resources\\ReadMeScreenShot_OptionsGeneral.png",
+      "targetPath": "ReadMeScreenShot_OptionsGeneral.png"
+    },
+    {
+      "pathOnDisk": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\Resources\\ReadMeScreenShot_PopUpBasic.png",
+      "targetPath": "ReadMeScreenShot_PopUpBasic.png"
+    },
+    {
+      "pathOnDisk": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\Resources\\ReadMeScreenShot_PopUpSolutionOpen.png",
+      "targetPath": "ReadMeScreenShot_PopUpSolutionOpen.png"
+    },
+    {
+      "pathOnDisk": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\Resources\\ReadMeScreenShot_PopUpWithFooter.png",
+      "targetPath": "ReadMeScreenShot_PopUpWithFooter.png"
+    }
+  ],
+  "categories": [
+    "documentation",
+    "setup and deployment",
+    "team development"
+  ],
+  "identity": {
+    "internalName": "SolutionOpenPopUp"
+  },
+  "overview": "..\\..\\SolutionOpenPopUp\\SolutionOpenPopUp2019\\VsmpReadMe.md", //vsmp page content
+  "priceCategory": "free",
+  "publisher": "GregTrevellick",
+  "private": false,
+  "qna": true,
+  "repo": "https://github.com/GregTrevellick/SolutionOpenPopUp"
+}
