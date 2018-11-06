@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace QuickLaunch.Fiddler
+namespace QuickLaunch.Fiddler.Options
 {
     /// <summary>
     /// A base class for a DialogPage to show in Tools -> Options.

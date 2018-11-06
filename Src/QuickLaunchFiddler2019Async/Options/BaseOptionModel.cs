@@ -13,12 +13,12 @@ using Microsoft.VisualStudio.Shell.Settings;
 using Microsoft.VisualStudio.Threading;
 using Task = System.Threading.Tasks.Task;
 
-namespace QuickLaunch.Fiddler
+namespace QuickLaunch.Fiddler.Options
 {
     /// <summary>
     /// A base class for specifying options
     /// </summary>
-    internal abstract class BaseOptionModel<T> where T : BaseOptionModel<T>, new()
+    public abstract class BaseOptionModel<T> where T : BaseOptionModel<T>, new()
     {
         private static AsyncLazy<T> _liveModel = new AsyncLazy<T>(CreateAsync, ThreadHelper.JoinableTaskFactory);
         private static AsyncLazy<ShellSettingsManager> _settingsManager = new AsyncLazy<ShellSettingsManager>(GetSettingsManagerAsync, ThreadHelper.JoinableTaskFactory);

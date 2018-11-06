@@ -1,6 +1,6 @@
 ﻿//using System.ComponentModel;
 
-//namespace QuickLaunch.Fiddler
+//namespace QuickLaunch.Fiddler.Options
 //{
 //    internal class OtherOptions : BaseOptionModel<OtherOptions>
 //    {

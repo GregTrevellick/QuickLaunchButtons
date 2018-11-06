@@ -1,4 +1,4 @@
-﻿namespace QuickLaunch.Fiddler
+﻿namespace QuickLaunch.Fiddler.Options
 {
     /// <summary>
     /// A provider for custom <see cref="DialogPage" /> implementations.
