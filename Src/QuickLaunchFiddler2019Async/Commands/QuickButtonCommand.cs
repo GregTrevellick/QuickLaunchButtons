@@ -1,38 +1,29 @@
 ﻿using Microsoft.VisualStudio.Shell;
-using System;
-using System.ComponentModel.Design;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Options;
-using VsixRatingChaser.Interfaces;
+using System.ComponentModel.Design;
+using System;
+using Task = System.Threading.Tasks.Task;
 
 namespace QuickLaunch.Fiddler.Commands
 {
-    internal class QuickButtonCommand
+    internal sealed class QuickButtonCommand
     {
-        private readonly Package package;
-        private static IRatingDetailsDto _hiddenChaserOptions;
-        private IServiceProvider ServiceProvider => this.package;
+        //private readonly AsyncPackage package;
+        //private static IRatingDetailsDto _hiddenChaserOptions;
         public const int CommandId = PackageIds.QuickButtonCommandId;
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
-        public static QuickButtonCommand Instance { get; private set; }
 
-        public static void Initialize(Package package, IRatingDetailsDto hiddenChaserOptions)
+        public static async Task InitializeAsync(AsyncPackage package)
         {
-            _hiddenChaserOptions = hiddenChaserOptions;
-            Instance = new QuickButtonCommand(package);
-            GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
-        }
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
 
-        private QuickButtonCommand(Package package)
-        {
             if (package == null)
             {
                 new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(null);
             }
 
-            this.package = package;
-
-            var commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
+            var commandService = await package.GetServiceAsync((typeof(IMenuCommandService))) as OleMenuCommandService;
 
             if (commandService != null)
             {
@@ -40,14 +31,16 @@ namespace QuickLaunch.Fiddler.Commands
                 var menuItem = new MenuCommand(InvokeApplication, menuCommandId);
                 commandService.AddCommand(menuItem);
             }
+
+            GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
         }
 
-        private void InvokeApplication(object sender, EventArgs e)
+        private static void InvokeApplication(object sender, EventArgs e)
         {
             try
             {
-                GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
-                ChaseRating();
+                GeneralOptionsHelper.InvokeApplication(VSPackage.GeneralOptions.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                //ChaseRating();
             }
             catch (Exception ex)
             {
@@ -57,13 +50,15 @@ namespace QuickLaunch.Fiddler.Commands
 
         public static void PersistVSToolOptions(string fileName)
         {
-            GeneralOptions.PersistVSToolOptions(fileName);
+            GeneralOptions generalOptions = ThreadHelper.JoinableTaskFactory.Run(GeneralOptions.GetLiveInstanceAsync);
+            generalOptions.ActualPathToExe = fileName;
+            generalOptions.Save();
         }
 
-        internal void ChaseRating( )
-        {
-            var packageRatingChaser = new PackageRatingChaser();
-            packageRatingChaser.Hunt(_hiddenChaserOptions);
-        }
+        //internal void ChaseRating( )
+        //{
+        //    var packageRatingChaser = new PackageRatingChaser();
+        //    packageRatingChaser.Hunt(_hiddenChaserOptions);
+        //}
     }
 }

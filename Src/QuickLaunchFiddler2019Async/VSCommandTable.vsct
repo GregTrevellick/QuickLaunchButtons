@@ -3,43 +3,60 @@
 
   <Extern href="stdidcmd.h"/>
   <Extern href="vsshlids.h"/>
-  
-  <!-- Adds a reference to the KnownMonikers in the ImageCatalog for use in the <button> elements -->
-  <Include href="KnownImageIds.vsct"/>
 
-  <Commands package="guidPackage">
+  <Commands package="guidQuickButtonCommandPackage">
+
+    <Menus>
+      <Menu guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar" type="Toolbar" >
+        <CommandFlag>DefaultDocked</CommandFlag>
+        <Strings>
+          <ButtonText>Open Fiddler</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
     <Groups>
-      <Group guid="guidMyCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <!-- Use the Command Explorer extension to find all location to place your group in
-             Get it here https://marketplace.visualstudio.com/items?itemName=MadsKristensen.commandexplorer -->
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" priority="0x9500">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+      <Group guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" priority="0x0000">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QuickLaunchToolBar"/>
       </Group>
     </Groups>
 
     <Buttons>
-      <Button guid="guidMyCommandPackageCmdSet" id="MyCommandId" priority="0x0100" type="Button">
-        <Parent guid="guidMyCommandPackageCmdSet" id="MyMenuGroup" />
-        <!-- Use a KnownMoniker as icon. 
-             See more here https://marketplace.visualstudio.com/items?itemName=MadsKristensen.KnownMonikersExplorer -->
-        <Icon guid="ImageCatalogGuid" id="ButtonClick" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0600" type="Button">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" />
+        <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>My Command2</ButtonText>
+          <ButtonText>Fiddler</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Open Fiddler</ButtonText>
         </Strings>
       </Button>
     </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
+    </Bitmaps>
   </Commands>
 
-  <KeyBindings>
-    <KeyBinding guid="guidMyCommandPackageCmdSet" id="MyCommandId" editor="guidVSStd97" key1="K" mod1="Control" key2="0" mod2="Control" />
-  </KeyBindings>
-
   <Symbols>
-    <GuidSymbol name="guidPackage" value="{fa24d542-0b4d-4f6b-ac03-24ff47c11b76}" />
-
-    <GuidSymbol name="guidMyCommandPackageCmdSet" value="{2b40859b-27f8-4dc6-85b1-f253386aa5f6}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="MyCommandId" value="0x0100" />
+    <GuidSymbol name="guidQuickButtonCommandPackage" value="{fbde4ce1-b539-4eb7-af0b-8b876f24a84d}" />
+    <GuidSymbol name="guidQuickButtonCommandPackageCmdSet" value="{7aaba3a9-97d0-41d2-b4c4-b543912979a0}">
+      <IDSymbol name="QuickButtonCommandId" value="0x0100" />
+      <IDSymbol name="QLToolbarGroup" value="0x1050" />
+      <IDSymbol name="QuickLaunchToolBar" value="0x1000" />
+      <IDSymbol name="ToolsMenuQuickLaunch" value="0x1800"/>
+    </GuidSymbol>
+    <GuidSymbol name="guidImages" value="{efe2a67d-72d5-43d8-8f14-e6748f3d967f}" >
+      <IDSymbol name="bmpPic1" value="1" />
     </GuidSymbol>
   </Symbols>
+
 </CommandTable>
