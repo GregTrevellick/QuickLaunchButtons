@@ -55,7 +55,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\MyCommand.cs" />
+    <Compile Include="Commands\QuickButtonCommand.cs" />
     <Compile Include="MyPackage.cs" />
     <Compile Include="Options\BaseOptionModel.cs" />
     <Compile Include="Options\BaseOptionPage.cs">
@@ -71,10 +71,19 @@
       <Link>LICENSE.txt</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Resources\Toolbar.png" />
+    <Content Include="Resources\ToolsMenu.png" />
+    <Content Include="Resources\VsixCommandIcon_16x16.png" />
+    <Content Include="Resources\VsixExtensionIcon_90x90.png" />
+    <Content Include="Resources\VsixExtensionPreview_175x175.png" />
     <None Include="packages.config" />
+    <None Include="ReadMe.md" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <None Include="VsmpPublish.json" />
+    <None Include="VsmpPublish.ps" />
+    <None Include="VsmpReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.7.7\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
