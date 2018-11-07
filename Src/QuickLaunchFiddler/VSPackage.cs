@@ -28,9 +28,14 @@ namespace QuickLaunch.Fiddler
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
             GeneralOptions = await GeneralOptions.GetLiveInstanceAsync();
+
             if (string.IsNullOrEmpty(GeneralOptions.ActualPathToExe))
             {
-                GeneralOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(secondaryFilePathSegment: "Fiddler", executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix, multipleSecondaryFilePathSegments: true);
+                GeneralOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
+                    secondaryFilePathSegment: "Fiddler", 
+                    executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix,
+                    multipleSecondaryFilePathSegments: true);
+
                 await GeneralOptions.SaveAsync();
             }
 

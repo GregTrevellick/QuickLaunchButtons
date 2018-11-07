@@ -1,8 +1,5 @@
 ﻿using System.ComponentModel;
-using System.ComponentModel;
-//using Microsoft.VisualStudio.Shell;
 using QuickLaunch.Common;
-using Task = System.Threading.Tasks.Task;
 
 namespace QuickLaunch.Fiddler.Options
 {
