@@ -1,16 +1,19 @@
-﻿using System;
+﻿using QuickLaunch.Common;
+using QuickLaunch.Fiddler.Options;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace QuickLaunch.Common
+namespace QuickLaunch.Fiddler
 {
-    public class GeneralOptionsHelper
+    public class GeneralOptionsHelper2
     {
-        public delegate void QuizHelperEventHandler(string actualPathToExe);
-        public static event QuizHelperEventHandler PersistHiddenOptionsQuizHelperEventHandlerEventHandler;
+        //public delegate void QuizHelperEventHandler(string actualPathToExe);
+        //public static event QuizHelperEventHandler PersistHiddenOptionsQuizHelperEventHandlerEventHandler;
 
         public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
@@ -23,7 +26,8 @@ namespace QuickLaunch.Common
                 var persistOptionsDto = new FilePrompterHelper(extensionName, actualPathToExe).PromptForActualExeFile(actualPathToExe);
                 if (persistOptionsDto.Persist)
                 {
-                    PersistHiddenOptionsQuizHelperEventHandlerEventHandler?.Invoke(persistOptionsDto.ValueToPersist);
+                    //////PersistHiddenOptionsQuizHelperEventHandlerEventHandler?.Invoke(persistOptionsDto.ValueToPersist);
+                    PersistVSToolOptions(persistOptionsDto.ValueToPersist);
                 }
                 actualPathToExe = persistOptionsDto.ValueToPersist;
                 var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);
@@ -46,6 +50,25 @@ namespace QuickLaunch.Common
             {
                 new FilePrompterHelper(extensionName, actualPathToExe).InformMissingActualExeFile(actualPathToExe, optionsName);
             }
+        }
+
+        public static void PersistVSToolOptions(string fileName)
+        {
+            Task.Run(async () =>
+            {
+                var generalOptions = await GeneralOptions.GetLiveInstanceAsync();
+
+                //if (string.IsNullOrEmpty(GeneralOptions.ActualPathToExe))
+                //{
+                    //generalOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
+                    //    secondaryFilePathSegment: "Fiddler",
+                    //    executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix,
+                    //    multipleSecondaryFilePathSegments: true);
+                    generalOptions.ActualPathToExe = fileName;
+
+                    await generalOptions.SaveAsync();
+                //}
+            });
         }
 
         private static void InvokeCommand(string executableFullPath, bool useShellExecute, bool processWithinProcess)

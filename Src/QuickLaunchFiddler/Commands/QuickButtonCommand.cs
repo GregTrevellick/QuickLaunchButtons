@@ -11,8 +11,10 @@ namespace QuickLaunch.Fiddler.Commands
     {
         //private readonly AsyncPackage package;
         //private static IRatingDetailsDto _hiddenChaserOptions;
+        //private static string actualPathToExe;
         public const int CommandId = PackageIds.QuickButtonCommandId;
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
+        public static GeneralOptions GeneralOptions { get; private set; }
 
         public static async Task InitializeAsync(AsyncPackage package)
         {
@@ -32,14 +34,16 @@ namespace QuickLaunch.Fiddler.Commands
                 commandService.AddCommand(menuItem);
             }
 
-            GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
+            //GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
         }
 
         private static void InvokeApplication(object sender, EventArgs e)
         {
             try
             {
-                GeneralOptionsHelper.InvokeApplication(VSPackage.GeneralOptions.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                //////var actualPathToExe = VSPackage.GeneralOptions.ActualPathToExe;
+                var actualPathToExe = GeneralOptions.Instance.ActualPathToExe;// GetActualPathToExeFromSettings();
+                GeneralOptionsHelper2.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
                 //ChaseRating();
             }
             catch (Exception ex)
@@ -48,17 +52,45 @@ namespace QuickLaunch.Fiddler.Commands
             }
         }
 
-        public static void PersistVSToolOptions(string fileName)
-        {
-            GeneralOptions generalOptions = ThreadHelper.JoinableTaskFactory.Run(GeneralOptions.GetLiveInstanceAsync);
-            generalOptions.ActualPathToExe = fileName;
-            generalOptions.Save();
-        }
+        //public static void GetActualPathToExeFromSettings()
+        //{
+        //    Task.Run(async () =>
+        //    {
+        //        GeneralOptions generalOptions = await GeneralOptions.GetLiveInstanceAsync();
+        //        actualPathToExe = generalOptions.ActualPathToExe;
+        //    });
+        //}
+
+        //public static void PersistVSToolOptions(string fileName)
+        //{
+        //    Task.Run(async () =>
+        //    {
+        //        GeneralOptions = await GeneralOptions.GetLiveInstanceAsync();
+
+        //        if (string.IsNullOrEmpty(GeneralOptions.ActualPathToExe))
+        //        {
+        //            GeneralOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
+        //                secondaryFilePathSegment: "Fiddler",
+        //                executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix,
+        //                multipleSecondaryFilePathSegments: true);
+
+        //            await GeneralOptions.SaveAsync();
+        //        }
+        //    });
+        //}
+
+        //public static void PersistVSToolOptions(string fileName)
+        //{
+        //    GeneralOptions generalOptions = ThreadHelper.JoinableTaskFactory.Run(GeneralOptions.GetLiveInstanceAsync);
+        //    generalOptions.ActualPathToExe = fileName;
+        //    generalOptions.Save();
+        //}
 
         //internal void ChaseRating( )
         //{
         //    var packageRatingChaser = new PackageRatingChaser();
         //    packageRatingChaser.Hunt(_hiddenChaserOptions);
         //}
+
     }
 }

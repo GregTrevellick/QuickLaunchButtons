@@ -55,6 +55,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\GeneralOptionsHelper.cs" />
     <Compile Include="Commands\QuickButtonCommand.cs" />
     <Compile Include="VSPackage.cs" />
     <Compile Include="Options\BaseOptionModel.cs" />
