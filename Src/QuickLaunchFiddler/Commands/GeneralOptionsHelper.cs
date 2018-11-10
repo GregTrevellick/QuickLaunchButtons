@@ -78,8 +78,7 @@ namespace QuickLaunch.Fiddler
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
-        //gregt this needs to be called in order to supply the default executable location
-        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = false)
+        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = true)
         {
             var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor, multipleSecondaryFilePathSegments);
 
@@ -176,18 +175,18 @@ namespace QuickLaunch.Fiddler
 
                 #region gregtLO add this section to OIA.sln
                 var pathVariable = Environment.GetEnvironmentVariable("path");
-                if (!string.IsNullOrEmpty(pathVariable))
-                {
-                    var pathVariables = pathVariable.Split(';');
-                    foreach (var path in pathVariables)
-                    {
-                        if (path.EndsWith(secondaryFilePathSegment))
-                        {
-                            var trimmedPath = path.Substring(0, path.Length - secondaryFilePathSegment.Length);
-                            initialFolderPaths.Add(trimmedPath);
-                        }
-                    }
-                }
+                //if (!string.IsNullOrEmpty(pathVariable))
+                //{
+                //    var pathVariables = pathVariable.Split(';');
+                //    foreach (var path in pathVariables)
+                //    {
+                //        //if (path.EndsWith(secondaryFilePathSegment))
+                //        //{
+                //        //    var trimmedPath = path.Substring(0, path.Length - secondaryFilePathSegment.Length);
+                //        //    initialFolderPaths.Add(trimmedPath);
+                //        //}
+                //    }
+                //}
                 #endregion
 
                 //set up array of the four special folders

@@ -9,6 +9,6 @@ namespace QuickLaunch.Fiddler.Options
 
         [DisplayName(CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
-        public string ActualPathToExe { get; set; }// = "zzz";
+        public string ActualPathToExe { get; set; }/////////////////////////////////////////////////////// = "zzz";
     }
 }
