@@ -78,6 +78,7 @@ namespace QuickLaunch.Fiddler
             InvokeProcess(string.Empty, fileName, useShellExecute, workingDirectory, processWithinProcess);
         }
 
+        //gregt this needs to be called in order to supply the default executable location
         public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = false)
         {
             var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor, multipleSecondaryFilePathSegments);
