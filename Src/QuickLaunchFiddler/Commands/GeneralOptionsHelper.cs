@@ -9,9 +9,23 @@ using System.Threading.Tasks;
 
 namespace QuickLaunch.Fiddler
 {
-    public class GeneralOptionsHelper
-    {
-        public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
+	public static class GeneralOptionsHelper
+	{
+		public static string GetDefaultActualPathToExe(bool persist)
+		{
+			var local = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+			local = local.Replace("Roaming", @"Local\Programs");
+			var defaultActualPathToExe = $@"{local}\Fiddler\Fiddler.exe";
+
+			if (persist)
+			{
+				PersistVSToolOptions(defaultActualPathToExe);
+			}
+
+			return defaultActualPathToExe;
+		}
+
+		public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
             var invokeCommand = false;
 
