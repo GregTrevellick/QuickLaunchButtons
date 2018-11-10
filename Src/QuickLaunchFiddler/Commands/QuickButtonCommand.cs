@@ -38,7 +38,7 @@ namespace QuickLaunch.Fiddler.Commands
             try
             {
                 var actualPathToExe = GeneralOptions.Instance.ActualPathToExe;
-                GeneralOptionsHelper2.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                GeneralOptionsHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
                 //ChaseRating();
             }
             catch (Exception ex)

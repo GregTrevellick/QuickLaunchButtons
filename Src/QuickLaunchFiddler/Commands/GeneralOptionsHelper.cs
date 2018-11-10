@@ -5,12 +5,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-//////////////////////////////////////////////////////////////////////////////////////////////////////////using System.Threading;
 using System.Threading.Tasks;
 
 namespace QuickLaunch.Fiddler
 {
-    public class GeneralOptionsHelper2
+    public class GeneralOptionsHelper
     {
         public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
@@ -138,7 +137,6 @@ namespace QuickLaunch.Fiddler
 
                     using (var proc = Process.Start(startNoArgs))
                     {
-                        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Thread.Sleep(3000);//TODO use async ?
                         using (Process.Start(start)) { }
                     }
                 }
