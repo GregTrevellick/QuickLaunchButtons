@@ -40,7 +40,9 @@ namespace QuickLaunch.Fiddler.Commands
                 var actualPathToExe = GeneralOptions.Instance.ActualPathToExe;
                 if (string.IsNullOrEmpty(actualPathToExe))
                 {
-                    actualPathToExe = @"C:\Users\gtrev\AppData\Local\Programs\Fiddler\Fiddler.exe";
+                    var local = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                    local = local.Replace("Roaming", @"Local\Programs");
+                    actualPathToExe = $@"{local}\Fiddler\Fiddler.exe";
                 }
                 GeneralOptionsHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
                 //ChaseRating();
