@@ -5,16 +5,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Threading;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////using System.Threading;
 using System.Threading.Tasks;
 
 namespace QuickLaunch.Fiddler
 {
     public class GeneralOptionsHelper2
     {
-        //public delegate void QuizHelperEventHandler(string actualPathToExe);
-        //public static event QuizHelperEventHandler PersistHiddenOptionsQuizHelperEventHandlerEventHandler;
-
         public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
             var invokeCommand = false;
@@ -24,12 +21,14 @@ namespace QuickLaunch.Fiddler
             if (fileNotKnown)
             {
                 var persistOptionsDto = new FilePrompterHelper(extensionName, actualPathToExe).PromptForActualExeFile(actualPathToExe);
+
                 if (persistOptionsDto.Persist)
                 {
-                    //////PersistHiddenOptionsQuizHelperEventHandlerEventHandler?.Invoke(persistOptionsDto.ValueToPersist);
-                    PersistVSToolOptions(persistOptionsDto.ValueToPersist);
+                     PersistVSToolOptions(persistOptionsDto.ValueToPersist);
                 }
+
                 actualPathToExe = persistOptionsDto.ValueToPersist;
+
                 var fileKnown = !string.IsNullOrEmpty(actualPathToExe) && File.Exists(actualPathToExe);
 
                 if (fileKnown)
@@ -57,17 +56,8 @@ namespace QuickLaunch.Fiddler
             Task.Run(async () =>
             {
                 var generalOptions = await GeneralOptions.GetLiveInstanceAsync();
-
-                //if (string.IsNullOrEmpty(GeneralOptions.ActualPathToExe))
-                //{
-                    //generalOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
-                    //    secondaryFilePathSegment: "Fiddler",
-                    //    executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix,
-                    //    multipleSecondaryFilePathSegments: true);
-                    generalOptions.ActualPathToExe = fileName;
-
-                    await generalOptions.SaveAsync();
-                //}
+                generalOptions.ActualPathToExe = fileName;
+                await generalOptions.SaveAsync();
             });
         }
 
@@ -148,7 +138,7 @@ namespace QuickLaunch.Fiddler
 
                     using (var proc = Process.Start(startNoArgs))
                     {
-                        Thread.Sleep(3000);//TODO use async ?
+                        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Thread.Sleep(3000);//TODO use async ?
                         using (Process.Start(start)) { }
                     }
                 }
@@ -250,8 +240,7 @@ namespace QuickLaunch.Fiddler
                 dPaths.Add(dPath);
             }
 
-            var result = searchPaths.Union(dPaths);
-            return result;
+            return searchPaths.Union(dPaths);
         }
 
         private static IEnumerable<string> DoubleUpForMultipleSecondaryFilePathSegments(IEnumerable<string> searchPaths, string secondaryFilePathSegment)//gregtLO unit test reqd
@@ -267,8 +256,7 @@ namespace QuickLaunch.Fiddler
                 }
             }
 
-            var result = searchPaths.Union(nbrPaths);
-            return result;
+            return searchPaths.Union(nbrPaths);
         }
     }
 }

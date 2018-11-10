@@ -21,24 +21,9 @@ namespace QuickLaunch.Fiddler
     [ProvideOptionPage(typeof(DialogPageProvider.General), CommonConstants.FiddlerOptionsName, CommonConstants.General, 0, 0, true)]
     public sealed class VSPackage : AsyncPackage
     {
-        //public static GeneralOptions GeneralOptions { get; private set; }
-
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-
-            //GeneralOptions = await GeneralOptions.GetLiveInstanceAsync();
-
-            //if (string.IsNullOrEmpty(GeneralOptions.ActualPathToExe))
-            //{
-            //    GeneralOptions.ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
-            //        secondaryFilePathSegment: "Fiddler", 
-            //        executableFileToBrowseFor: CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix,
-            //        multipleSecondaryFilePathSegments: true);
-
-            //    await GeneralOptions.SaveAsync();
-            //}
-
             await QuickButtonCommand.InitializeAsync(this);
         }
     }
