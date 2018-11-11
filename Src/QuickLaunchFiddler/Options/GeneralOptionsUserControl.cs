@@ -19,10 +19,12 @@ namespace QuickLaunch.Fiddler.Options
         public void Initialize()
         {
             labelActualPathToExe.Text = CommonActualPathToExeOptionLabel;
-            generalOptions.Load();
             textActualPathToExe.Text = generalOptions.ActualPathToExe;
+            textActualPathToExeDescription.Text = CommonConstants.ActualPathToExeOptionDetailedDescription;
+
+            generalOptions.Load();
         }
-        
+
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog

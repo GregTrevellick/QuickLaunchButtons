@@ -40,10 +40,10 @@ namespace QuickLaunch.Fiddler.Commands
 
 				if (string.IsNullOrEmpty(actualPathToExe))
 				{
-					actualPathToExe = GeneralOptionsHelper.GetDefaultActualPathToExe(true);
+                    actualPathToExe = GeneralOptionsHelper.GetDefaultActualPathToExe();/////////////////////////////////////////////// (true);
 				}
 
-				GeneralOptionsHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
             }
             catch (Exception ex)
             {

@@ -33,14 +33,14 @@ namespace QuickLaunch.Fiddler.Options
         {
             get
             {
-                var settingsUserControl = new GeneralOptionsUserControl
+                var generalOptionsUserControl = new GeneralOptionsUserControl
                 {
                     generalOptions = new GeneralOptions()
                 };
 
-                settingsUserControl.Initialize();
+                generalOptionsUserControl.Initialize();
 
-                return settingsUserControl;
+                return generalOptionsUserControl;
             }
         }
     }
