@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using System.Windows.Forms;
 
 namespace QuickLaunch.Fiddler.Options
 {
@@ -26,6 +27,21 @@ namespace QuickLaunch.Fiddler.Options
         public override void SaveSettingsToStorage()
         {
             _model.Save();
+        }
+
+        protected override IWin32Window Window
+        {
+            get
+            {
+                var settingsUserControl = new SettingsUserControl
+                {
+                    generalOptions = new GeneralOptions()
+                };
+
+                settingsUserControl.Initialize();
+
+                return settingsUserControl;
+            }
         }
     }
 }
