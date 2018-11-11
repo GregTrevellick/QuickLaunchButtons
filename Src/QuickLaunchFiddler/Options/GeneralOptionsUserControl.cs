@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace QuickLaunch.Fiddler.Options
 {
-    public partial class SettingsUserControl : UserControl
+    public partial class GeneralOptionsUserControl : UserControl
     {
-        public SettingsUserControl()
+        public GeneralOptionsUserControl()
         {
             InitializeComponent();
         }

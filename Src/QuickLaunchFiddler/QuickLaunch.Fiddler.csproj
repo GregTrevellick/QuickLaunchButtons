@@ -57,11 +57,11 @@
   <ItemGroup>
     <Compile Include="Commands\GeneralOptionsHelper.cs" />
     <Compile Include="Commands\QuickButtonCommand.cs" />
-    <Compile Include="Options\SettingsUserControl.cs">
+    <Compile Include="Options\GeneralOptionsUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Options\SettingsUserControl.Designer.cs">
-      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+    <Compile Include="Options\GeneralOptionsUserControl.Designer.cs">
+      <DependentUpon>GeneralOptionsUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="VSPackage.cs" />
     <Compile Include="Options\BaseOptionModel.cs" />
@@ -203,8 +203,8 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Options\SettingsUserControl.resx">
-      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="Options\GeneralOptionsUserControl.resx">
+      <DependentUpon>GeneralOptionsUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source.extension.resx">
       <AutoGen>True</AutoGen>

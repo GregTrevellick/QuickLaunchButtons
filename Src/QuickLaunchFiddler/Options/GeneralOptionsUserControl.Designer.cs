@@ -1,6 +1,6 @@
 ﻿namespace QuickLaunch.Fiddler.Options
 {
-    partial class SettingsUserControl
+    partial class GeneralOptionsUserControl
     {
         /// <summary> 
         /// Required designer variable.
