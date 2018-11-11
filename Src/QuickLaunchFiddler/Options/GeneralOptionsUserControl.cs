@@ -1,4 +1,6 @@
 ﻿using System;
+/////////////////////////////////////////////////////////////using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace QuickLaunch.Fiddler.Options
@@ -17,12 +19,25 @@ namespace QuickLaunch.Fiddler.Options
             generalOptions.Load();
             textBox1.Text = generalOptions.ActualPathToExe;
         }
-
-        private void textBox1_Leave(object sender, EventArgs e)
+        
+        private void btnBrowse_Click(object sender, EventArgs e)
         {
-            //gregt change this to when save it clicked
-            generalOptions.ActualPathToExe = textBox1.Text;
-            generalOptions.Save();
+            var openFileDialog = new OpenFileDialog
+            {
+                Filter = "Executable file (*.exe)|*.exe|All files (*.*)|*.*",
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                Multiselect = false,
+            };
+
+            var dialogResult = openFileDialog.ShowDialog();
+            
+            if (dialogResult == DialogResult.OK)
+            {
+                var fileName  = openFileDialog.FileNames.Single();
+                textBox1.Text = fileName;
+                generalOptions.ActualPathToExe = fileName;
+                generalOptions.Save();
+            }
         }
     }
 }
