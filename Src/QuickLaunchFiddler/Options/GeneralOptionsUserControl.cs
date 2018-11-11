@@ -1,5 +1,5 @@
-﻿using System;
-/////////////////////////////////////////////////////////////using System.IO;
+﻿using QuickLaunch.Common;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -7,17 +7,20 @@ namespace QuickLaunch.Fiddler.Options
 {
     public partial class GeneralOptionsUserControl : UserControl
     {
+        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+
+        internal GeneralOptions generalOptions;
+
         public GeneralOptionsUserControl()
         {
             InitializeComponent();
         }
-
-        internal GeneralOptions generalOptions;
-
+        
         public void Initialize()
         {
+            labelActualPathToExe.Text = CommonActualPathToExeOptionLabel;
             generalOptions.Load();
-            textBox1.Text = generalOptions.ActualPathToExe;
+            textActualPathToExe.Text = generalOptions.ActualPathToExe;
         }
         
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -34,7 +37,9 @@ namespace QuickLaunch.Fiddler.Options
             if (dialogResult == DialogResult.OK)
             {
                 var fileName  = openFileDialog.FileNames.Single();
-                textBox1.Text = fileName;
+
+                textActualPathToExe.Text = fileName;
+
                 generalOptions.ActualPathToExe = fileName;
                 generalOptions.Save();
             }
