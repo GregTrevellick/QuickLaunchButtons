@@ -36,14 +36,14 @@
             // 
             // textActualPathToExe
             // 
-            this.textActualPathToExe.Location = new System.Drawing.Point(17, 36);
+            this.textActualPathToExe.Location = new System.Drawing.Point(3, 36);
             this.textActualPathToExe.Name = "textActualPathToExe";
-            this.textActualPathToExe.Size = new System.Drawing.Size(246, 20);
+            this.textActualPathToExe.Size = new System.Drawing.Size(300, 20);
             this.textActualPathToExe.TabIndex = 0;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(269, 34);
+            this.btnBrowse.Location = new System.Drawing.Point(309, 34);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(52, 23);
             this.btnBrowse.TabIndex = 1;
@@ -54,7 +54,7 @@
             // labelActualPathToExe
             // 
             this.labelActualPathToExe.AutoSize = true;
-            this.labelActualPathToExe.Location = new System.Drawing.Point(17, 17);
+            this.labelActualPathToExe.Location = new System.Drawing.Point(3, 10);
             this.labelActualPathToExe.Name = "labelActualPathToExe";
             this.labelActualPathToExe.Size = new System.Drawing.Size(35, 13);
             this.labelActualPathToExe.TabIndex = 2;
@@ -63,7 +63,7 @@
             // textActualPathToExeDescription
             // 
             this.textActualPathToExeDescription.AutoSize = true;
-            this.textActualPathToExeDescription.Location = new System.Drawing.Point(17, 70);
+            this.textActualPathToExeDescription.Location = new System.Drawing.Point(3, 68);
             this.textActualPathToExeDescription.Name = "textActualPathToExeDescription";
             this.textActualPathToExeDescription.Size = new System.Drawing.Size(35, 13);
             this.textActualPathToExeDescription.TabIndex = 3;
@@ -78,7 +78,7 @@
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.textActualPathToExe);
             this.Name = "GeneralOptionsUserControl";
-            this.Size = new System.Drawing.Size(404, 107);
+            this.Size = new System.Drawing.Size(364, 107);
             this.ResumeLayout(false);
             this.PerformLayout();
 
