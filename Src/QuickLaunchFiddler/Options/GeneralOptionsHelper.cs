@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace QuickLaunch.Fiddler
+namespace QuickLaunch.Fiddler.Options
 {
 	public static class GeneralOptionsHelper
 	{

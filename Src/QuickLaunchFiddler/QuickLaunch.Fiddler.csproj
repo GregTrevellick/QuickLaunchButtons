@@ -55,7 +55,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\GeneralOptionsHelper.cs" />
+    <Compile Include="Options\GeneralOptionsHelper.cs" />
     <Compile Include="Commands\QuickButtonCommand.cs" />
     <Compile Include="Options\GeneralOptionsUserControl.cs">
       <SubType>UserControl</SubType>
