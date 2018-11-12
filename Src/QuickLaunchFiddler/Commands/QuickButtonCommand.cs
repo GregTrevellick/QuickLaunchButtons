@@ -22,7 +22,7 @@ namespace QuickLaunch.Fiddler.Commands
                 new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(null);
             }
 
-            var commandService = await package.GetServiceAsync((typeof(IMenuCommandService))) as OleMenuCommandService;
+            var commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
 
             if (commandService != null)
             {
@@ -40,7 +40,7 @@ namespace QuickLaunch.Fiddler.Commands
 
 				if (string.IsNullOrEmpty(actualPathToExe))
 				{
-                    actualPathToExe = FileSystemHelper.GetDefaultActualPathToExe();//////////////////////////////////////////////////////////////////////////// (true);
+                    actualPathToExe = FileSystemHelper.GetDefaultActualPathToExe();
 				}
 
 				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);

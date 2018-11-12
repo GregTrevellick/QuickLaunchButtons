@@ -8,7 +8,7 @@ namespace QuickLaunch.Fiddler.Commands
 {
     public static class FileFinderHelper
     {
-        public static string GetActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = true)
+        public static string GetKnownActualPathToExe(string secondaryFilePathSegment, string executableFileToBrowseFor, bool multipleSecondaryFilePathSegments = true)
         {
             var searchPaths = GetSearchPathsForThirdPartyExe(secondaryFilePathSegment, executableFileToBrowseFor, multipleSecondaryFilePathSegments);
 
