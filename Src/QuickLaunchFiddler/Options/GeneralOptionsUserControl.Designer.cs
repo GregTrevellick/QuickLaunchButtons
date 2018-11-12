@@ -41,7 +41,6 @@
             this.textActualPathToExe.Name = "textActualPathToExe";
             this.textActualPathToExe.Size = new System.Drawing.Size(253, 20);
             this.textActualPathToExe.TabIndex = 0;
-            this.textActualPathToExe.Leave += new System.EventHandler(this.btnSave_Click);
             // 
             // btnBrowse
             // 
