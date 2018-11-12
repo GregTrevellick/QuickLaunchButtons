@@ -55,8 +55,8 @@ namespace QuickLaunch.Fiddler.Commands
                 var generalOptions = await GeneralOptions.GetLiveInstanceAsync();
                 generalOptions.ActualPathToExe = fileName;
                 await generalOptions.SaveAsync();
-                await generalOptions.LoadAsync();/////////////////////////////////////////////////////////////////////this seems to be needed for the new options to load the 2nd time round
-                                                  //////////////////////////// GREGT NOLONGER TRUE ?????????????
+                ///////////////////////////////await generalOptions.LoadAsync();/////////////////////////////////////////////////////////////////////this seems to be needed for the new options to load the 2nd time round
+                  //////////////////////////// GREGT NOLONGER TRUE ?????????????
             });
         }
 
