@@ -26,7 +26,8 @@ namespace QuickLaunch.Fiddler.Options
 
         public override void SaveSettingsToStorage()
         {
-            _model.Save();
+            //_model.Save();
+            base.SaveSettingsToStorage();
         }
 
         protected override IWin32Window Window
