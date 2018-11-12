@@ -1,4 +1,5 @@
 ﻿using QuickLaunch.Common;
+using QuickLaunch.Fiddler.Commands;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,8 +9,8 @@ namespace QuickLaunch.Fiddler.Options
     public partial class GeneralOptionsUserControl : UserControl
     {
         internal GeneralOptions generalOptions;
-
-        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+        private const string exe = CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+        private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + exe;
 
         public GeneralOptionsUserControl()
         {
@@ -18,11 +19,21 @@ namespace QuickLaunch.Fiddler.Options
         
         public void Initialize()
         {
-            labelActualPathToExe.Text = CommonActualPathToExeOptionLabel;
-            textActualPathToExe.Text = generalOptions.ActualPathToExe;
-            textActualPathToExeDescription.Text = CommonConstants.ActualPathToExeOptionDetailedDescription;
-
             generalOptions.Load();
+
+            labelActualPathToExe.Text = CommonActualPathToExeOptionLabel;
+            labelActualPathToExeDescription.Text = CommonConstants.ActualPathToExeOptionDetailedDescription;
+
+            var actualPathToExe = generalOptions.ActualPathToExe;
+
+            if (string.IsNullOrEmpty(actualPathToExe))
+            {
+                textActualPathToExe.Text = FileFinderHelper.GetKnownActualPathToExe("Fiddler", exe, true);
+            }
+            else
+            {
+                textActualPathToExe.Text = actualPathToExe;
+            }
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

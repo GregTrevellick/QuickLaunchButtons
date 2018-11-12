@@ -31,7 +31,7 @@
             this.textActualPathToExe = new System.Windows.Forms.TextBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.labelActualPathToExe = new System.Windows.Forms.Label();
-            this.textActualPathToExeDescription = new System.Windows.Forms.Label();
+            this.labelActualPathToExeDescription = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textActualPathToExe
@@ -60,20 +60,20 @@
             this.labelActualPathToExe.TabIndex = 2;
             this.labelActualPathToExe.Text = "label1";
             // 
-            // textActualPathToExeDescription
+            // labelActualPathToExeDescription
             // 
-            this.textActualPathToExeDescription.AutoSize = true;
-            this.textActualPathToExeDescription.Location = new System.Drawing.Point(3, 68);
-            this.textActualPathToExeDescription.Name = "textActualPathToExeDescription";
-            this.textActualPathToExeDescription.Size = new System.Drawing.Size(35, 13);
-            this.textActualPathToExeDescription.TabIndex = 3;
-            this.textActualPathToExeDescription.Text = "label1";
+            this.labelActualPathToExeDescription.AutoSize = true;
+            this.labelActualPathToExeDescription.Location = new System.Drawing.Point(3, 68);
+            this.labelActualPathToExeDescription.Name = "labelActualPathToExeDescription";
+            this.labelActualPathToExeDescription.Size = new System.Drawing.Size(35, 13);
+            this.labelActualPathToExeDescription.TabIndex = 3;
+            this.labelActualPathToExeDescription.Text = "label1";
             // 
             // GeneralOptionsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textActualPathToExeDescription);
+            this.Controls.Add(this.labelActualPathToExeDescription);
             this.Controls.Add(this.labelActualPathToExe);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.textActualPathToExe);
@@ -89,6 +89,6 @@
         private System.Windows.Forms.TextBox textActualPathToExe;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Label labelActualPathToExe;
-        private System.Windows.Forms.Label textActualPathToExeDescription;
+        private System.Windows.Forms.Label labelActualPathToExeDescription;
     }
 }

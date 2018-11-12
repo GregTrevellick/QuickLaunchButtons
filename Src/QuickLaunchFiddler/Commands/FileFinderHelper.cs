@@ -27,6 +27,9 @@ namespace QuickLaunch.Fiddler.Commands
         {
             var searchPaths = new List<string>();
 
+            var defaultPath = GetDefaultActualPathToExe(executableFileToBrowseFor, secondaryFilePathSegment);
+            searchPaths.Add(defaultPath);
+
             var paths = GetSpecialFoldersPlusThirdPartyExePath(executableFileToBrowseFor, secondaryFilePathSegment).ToList();
             searchPaths.AddRange(paths);
 
@@ -144,6 +147,13 @@ namespace QuickLaunch.Fiddler.Commands
             }
 
             return searchPaths.Union(nbrPaths);
+        }
+
+        private static string GetDefaultActualPathToExe(string executableFileToBrowseFor, string secondaryFilePathSegment)
+        {
+            var local = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            local = local.Replace("Roaming", @"Local\Programs");
+            return $@"{local}\{secondaryFilePathSegment}\{executableFileToBrowseFor}";
         }
     }
 }

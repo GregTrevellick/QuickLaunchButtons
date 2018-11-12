@@ -13,6 +13,8 @@ namespace QuickLaunch.Fiddler.Commands
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
         public static GeneralOptions GeneralOptions { get; private set; }
 
+        private const string exe = CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+
         public static async Task InitializeAsync(AsyncPackage package)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -40,8 +42,8 @@ namespace QuickLaunch.Fiddler.Commands
 
 				if (string.IsNullOrEmpty(actualPathToExe))
 				{
-                    actualPathToExe = FileSystemHelper.GetDefaultActualPathToExe();
-				}
+                    actualPathToExe = FileFinderHelper.GetKnownActualPathToExe("Fiddler", exe, true); 
+                }
 
 				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
             }
