@@ -62,5 +62,10 @@ namespace QuickLaunch.Fiddler.Options
             generalOptions.ActualPathToExe = fileName;
             generalOptions.Save();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSettings(textActualPathToExe.Text);
+        }
     }
 }

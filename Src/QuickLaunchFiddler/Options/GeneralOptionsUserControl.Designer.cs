@@ -32,18 +32,20 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.labelActualPathToExe = new System.Windows.Forms.Label();
             this.labelActualPathToExeDescription = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textActualPathToExe
             // 
-            this.textActualPathToExe.Location = new System.Drawing.Point(3, 36);
+            this.textActualPathToExe.Location = new System.Drawing.Point(3, 35);
             this.textActualPathToExe.Name = "textActualPathToExe";
-            this.textActualPathToExe.Size = new System.Drawing.Size(300, 20);
+            this.textActualPathToExe.Size = new System.Drawing.Size(253, 20);
             this.textActualPathToExe.TabIndex = 0;
+            this.textActualPathToExe.Leave += new System.EventHandler(this.btnSave_Click);
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(309, 34);
+            this.btnBrowse.Location = new System.Drawing.Point(262, 33);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(52, 23);
             this.btnBrowse.TabIndex = 1;
@@ -69,10 +71,21 @@
             this.labelActualPathToExeDescription.TabIndex = 3;
             this.labelActualPathToExeDescription.Text = "label1";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(320, 33);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(44, 23);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // GeneralOptionsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.labelActualPathToExeDescription);
             this.Controls.Add(this.labelActualPathToExe);
             this.Controls.Add(this.btnBrowse);
@@ -90,5 +103,6 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Label labelActualPathToExe;
         private System.Windows.Forms.Label labelActualPathToExeDescription;
+        private System.Windows.Forms.Button btnSave;
     }
 }

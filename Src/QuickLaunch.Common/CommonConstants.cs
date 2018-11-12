@@ -4,7 +4,7 @@ namespace QuickLaunch.Common
 {
     public static class CommonConstants
     {
-        public const string ActualPathToExeOptionDetailedDescription = "Specify the absolute install path for the application.";
+        public const string ActualPathToExeOptionDetailedDescription = "Specify the absolute install path for the application and click Save.";
         public const string ActualPathToExeOptionLabelPrefix = "Path to ";
         public const string DefaultExecutableFileSuffix = ".exe";
         public const string General = "General";
