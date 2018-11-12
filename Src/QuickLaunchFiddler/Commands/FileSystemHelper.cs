@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace QuickLaunch.Fiddler.Options
+namespace QuickLaunch.Fiddler.Commands
 {
-    public static class GeneralOptionsHelper
+    public static class FileSystemHelper
 	{
 		public static string GetDefaultActualPathToExe(bool persist = false)
 		{

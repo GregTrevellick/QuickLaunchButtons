@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\InvokerHelper.cs" />
-    <Compile Include="Options\GeneralOptionsHelper.cs" />
+    <Compile Include="Commands\FileSystemHelper.cs" />
     <Compile Include="Commands\QuickButtonCommand.cs" />
     <Compile Include="Options\GeneralOptionsUserControl.cs">
       <SubType>UserControl</SubType>
