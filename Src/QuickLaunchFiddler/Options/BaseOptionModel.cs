@@ -119,9 +119,12 @@ namespace QuickLaunch.Fiddler.Options
                 settingsStore.CreateCollection(CollectionName);
             }
 
-            foreach (PropertyInfo property in GetOptionProperties())
+            var optProps = GetOptionProperties();
+
+            foreach (PropertyInfo property in optProps)
             {
-                string output = SerializeValue(property.GetValue(this));
+                var val = property.GetValue(this);
+                string output = SerializeValue(val);
                 settingsStore.SetString(CollectionName, property.Name, output);
             }
 

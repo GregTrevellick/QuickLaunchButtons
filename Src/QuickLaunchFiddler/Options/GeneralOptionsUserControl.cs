@@ -51,7 +51,7 @@ namespace QuickLaunch.Fiddler.Options
             return new OpenFileDialog
             {
                 Filter = "Executable file (*.exe)|*.exe|All files (*.*)|*.*",
-                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),
                 Multiselect = false,
             };
         }
