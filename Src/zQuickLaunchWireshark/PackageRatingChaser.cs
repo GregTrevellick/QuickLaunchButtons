@@ -1,4 +1,4 @@
-﻿using QuickLaunch.Rating;
+﻿//using QuickLaunch.Rating;
 using VsixRatingChaser.Dtos;
 using VsixRatingChaser.Interfaces;
 
@@ -16,7 +16,7 @@ namespace QuickLaunch.Wireshark
                 
             };
 
-            ChaserGateway.Probe(ratingDetailsDto, extensionDetailsDto);
+            //ChaserGateway.Probe(ratingDetailsDto, extensionDetailsDto);
         }
     }
 }

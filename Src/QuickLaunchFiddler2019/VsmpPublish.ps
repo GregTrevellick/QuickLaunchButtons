@@ -1,0 +1,7 @@
+# https://docs.microsoft.com/en-us/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension-via-command-line?view=vs-2017
+
+cd C:\Users\gtrev\Source\Repos\async-ers\TODO\QuickLaunchButtons FAILING\src\packages\Microsoft.VSSDK.BuildTools.15.8.3252\tools\vssdk\bin
+
+.\VsixPublisher.exe publish  -payload "..\..\..\..\..\QuickLaunchFiddler\bin\debug\QuickLaunch.Fiddler.vsix"  -publishManifest "..\..\..\..\..\\QuickLaunchFiddler\VsmpPublish.json"  -personalAccessToken "xx"
+
+.\VsixPublisher.exe publish  -payload "..\..\..\..\..\QuickLaunchWireshark\bin\debug\QuickLaunch.Wireshark.vsix"  -publishManifest "..\..\..\..\..\\QuickLaunchWireshark\VsmpPublish.json"  -personalAccessToken "xx"

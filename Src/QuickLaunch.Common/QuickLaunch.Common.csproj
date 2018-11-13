@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuickLaunch.Common</RootNamespace>
     <AssemblyName>QuickLaunch.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,11 +47,11 @@
     <Compile Include="CommonConstants.cs" />
     <Compile Include="ConstantsForAppCommon.cs" />
     <Compile Include="FileBrowseOutcomeDto.cs" />
+    <Compile Include="FileFinderHelper.cs" />
     <Compile Include="FilePrompterHelper.cs" />
     <Compile Include="InitialFolderType.cs" />
     <Compile Include="PersistOptionsDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GeneralOptionsHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
