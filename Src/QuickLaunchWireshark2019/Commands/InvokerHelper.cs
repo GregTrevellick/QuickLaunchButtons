@@ -1,11 +1,11 @@
 ﻿using QuickLaunch.Common;
-using QuickLaunch.Fiddler.Options;
+using QuickLaunch.Wireshark.Options;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace QuickLaunch.Fiddler.Commands
+namespace QuickLaunch.Wireshark.Commands
 {
     public static class InvokerHelper
     {

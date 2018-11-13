@@ -1,6 +1,6 @@
 ﻿//using System.ComponentModel;
 
-//namespace QuickLaunch.Fiddler.Options
+//namespace QuickLaunch.Wireshark.Options
 //{
 //    internal class OtherOptions : BaseOptionModel<OtherOptions>
 //    {

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="8848b323-a859-40fa-88ff-ae80d5ad6198" Version="1.1.1" Language="en-US" Publisher="Greg Trevellick" />
-        <DisplayName>Open Fiddler</DisplayName>
-        <Description xml:space="preserve">Adds toolbar button and tools menu button to launch Fiddler</Description>
+        <Identity Id="BDA39C0E-35E7-413C-A4FF-511A79DA0848" Version="1.1.1" Language="en-US" Publisher="Greg Trevellick" />
+        <DisplayName>Open Wireshark</DisplayName>
+        <Description xml:space="preserve">Adds toolbar button and tools menu button to launch Wireshark</Description>
         <MoreInfo>https://github.com/GregTrevellick/QuickLaunchButtons</MoreInfo>
         <License>LICENSE.txt</License>
         <ReleaseNotes>https://github.com/GregTrevellick/QuickLaunchButtons/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\VsixExtensionIcon_90x90.png</Icon>
         <PreviewImage>Resources\VsixExtensionPreview_175x175.png</PreviewImage>
-        <Tags>quicklaunch, quick launch, quick, launch, fiddler</Tags>
+        <Tags>quicklaunch, quick launch, quick, launch, Wireshark</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0, 17.0)" />

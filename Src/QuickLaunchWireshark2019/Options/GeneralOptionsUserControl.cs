@@ -1,15 +1,15 @@
 ﻿using QuickLaunch.Common;
-using QuickLaunch.Fiddler.Commands;
+using QuickLaunch.Wireshark.Commands;
 using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace QuickLaunch.Fiddler.Options
+namespace QuickLaunch.Wireshark.Options
 {
     public partial class GeneralOptionsUserControl : UserControl
     {
         internal GeneralOptions generalOptions;
-        private const string exe = CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+        private const string exe = CommonConstants.WiresharkExeName + CommonConstants.DefaultExecutableFileSuffix;
         private const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + exe;
 
         public GeneralOptionsUserControl()
@@ -28,7 +28,7 @@ namespace QuickLaunch.Fiddler.Options
 
             if (string.IsNullOrEmpty(actualPathToExe))
             {
-                textActualPathToExe.Text = FileFinderHelper.GetKnownActualPathToExe("Fiddler", exe, true);
+                textActualPathToExe.Text = FileFinderHelper.GetKnownActualPathToExe("Wireshark", exe, true);
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿namespace QuickLaunch.Fiddler.Options
+﻿namespace QuickLaunch.Wireshark.Options
 {
     partial class GeneralOptionsUserControl
     {

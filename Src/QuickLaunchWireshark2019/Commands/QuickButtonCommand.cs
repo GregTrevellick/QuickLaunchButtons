@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using QuickLaunch.Common;
-using QuickLaunch.Fiddler.Options;
+using QuickLaunch.Wireshark.Options;
 using System.ComponentModel.Design;
 using System;
 using Task = System.Threading.Tasks.Task;
 
-namespace QuickLaunch.Fiddler.Commands
+namespace QuickLaunch.Wireshark.Commands
 {
     internal sealed class QuickButtonCommand
     {
@@ -13,7 +13,7 @@ namespace QuickLaunch.Fiddler.Commands
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
         public static GeneralOptions GeneralOptions { get; private set; }
 
-        private const string exe = CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
+        private const string exe = CommonConstants.WiresharkExeName + CommonConstants.DefaultExecutableFileSuffix;
 
         public static async Task InitializeAsync(AsyncPackage package)
         {
@@ -42,10 +42,10 @@ namespace QuickLaunch.Fiddler.Commands
 
 				if (string.IsNullOrEmpty(actualPathToExe))
 				{
-                    actualPathToExe = FileFinderHelper.GetKnownActualPathToExe("Fiddler", exe, true); 
+                    actualPathToExe = FileFinderHelper.GetKnownActualPathToExe("Wireshark", exe, true); 
                 }
 
-				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.WiresharkOptionsName);
             }
             catch (Exception ex)
             {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using System.Windows.Forms;
 
-namespace QuickLaunch.Fiddler.Options
+namespace QuickLaunch.Wireshark.Options
 {
     /// <summary>
     /// A base class for a DialogPage to show in Tools -> Options.

@@ -1,4 +1,4 @@
-﻿namespace QuickLaunch.Fiddler.Options
+﻿namespace QuickLaunch.Wireshark.Options
 {
     /// <summary>
     /// A provider for custom <see cref="DialogPage" /> implementations.
