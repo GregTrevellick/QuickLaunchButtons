@@ -1,30 +1,41 @@
-﻿using Microsoft.VisualStudio;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Commands;
 using QuickLaunch.Fiddler.Options;
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.InteropServices;
-using System.Threading;
-using Task = System.Threading.Tasks.Task;
+using VsixRatingChaser.Interfaces;
 
 namespace QuickLaunch.Fiddler
 {
-    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
+    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
+    [ProvideAutoLoad(UIContextGuids80.NoSolution)]
+    [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration(productName: "#110", productDetails: "#112", productId: Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
-    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [ProvideAutoLoad(VSConstants.UICONTEXT.NoSolution_string, PackageAutoLoadFlags.BackgroundLoad)]
-    [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExists_string, PackageAutoLoadFlags.BackgroundLoad)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [ProvideOptionPage(typeof(DialogPageProvider.General), CommonConstants.FiddlerOptionsName, CommonConstants.General, 0, 0, true)]
+    [Guid(PackageGuids.guidQuickButtonCommandPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    public sealed class VSPackage : AsyncPackage
+    [ProvideOptionPage(typeof(GeneralOptions), CommonConstants.FiddlerOptionsName, CommonConstants.General, 0, 0, true)]
+    public sealed class VSPackage : Package
     {
-        protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
+        public static GeneralOptions Options { get; private set; }
+
+        ///// <summary>
+        /////Inside this method you can place any initialization code that does not require any Visual Studio service 
+        /////because at this point the package object is created but not sited yet inside Visual Studio environment. 
+        /////The place to do all the other initialization is the Initialize method.
+        ///// </summary>
+        //public VSPackage()
+        //{
+        //}
+
+        protected override void Initialize()
         {
-            await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await QuickButtonCommand.InitializeAsync(this);
+            Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
+            var hiddenChaserOptions = (IRatingDetailsDto)GetDialogPage(typeof(HiddenRatingDetailsDto));
+            QuickButtonCommand.Initialize(this, hiddenChaserOptions);
+            base.Initialize();
         }
     }
 }

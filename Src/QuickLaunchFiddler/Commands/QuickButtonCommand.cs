@@ -1,30 +1,38 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using System;
+using System.ComponentModel.Design;
 using QuickLaunch.Common;
 using QuickLaunch.Fiddler.Options;
-using System.ComponentModel.Design;
-using System;
-using Task = System.Threading.Tasks.Task;
+using VsixRatingChaser.Interfaces;
 
 namespace QuickLaunch.Fiddler.Commands
 {
-    internal sealed class QuickButtonCommand
+    internal class QuickButtonCommand
     {
+        private readonly Package package;
+        private static IRatingDetailsDto _hiddenChaserOptions;
+        private IServiceProvider ServiceProvider => this.package;
         public const int CommandId = PackageIds.QuickButtonCommandId;
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidQuickButtonCommandPackageCmdSetString);
-        public static GeneralOptions GeneralOptions { get; private set; }
+        public static QuickButtonCommand Instance { get; private set; }
 
-        private const string exe = CommonConstants.FiddlerExeName + CommonConstants.DefaultExecutableFileSuffix;
-
-        public static async Task InitializeAsync(AsyncPackage package)
+        public static void Initialize(Package package, IRatingDetailsDto hiddenChaserOptions)
         {
-            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            _hiddenChaserOptions = hiddenChaserOptions;
+            Instance = new QuickButtonCommand(package);
+            GeneralOptionsHelper.PersistHiddenOptionsQuizHelperEventHandlerEventHandler += PersistVSToolOptions;
+        }
 
+        private QuickButtonCommand(Package package)
+        {
             if (package == null)
             {
                 new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(null);
             }
 
-            var commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
+            this.package = package;
+
+            var commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
 
             if (commandService != null)
             {
@@ -34,23 +42,28 @@ namespace QuickLaunch.Fiddler.Commands
             }
         }
 
-        private static void InvokeApplication(object sender, EventArgs e)
+        private void InvokeApplication(object sender, EventArgs e)
         {
             try
             {
-                var actualPathToExe = GeneralOptions.Instance.ActualPathToExe;
-
-				if (string.IsNullOrEmpty(actualPathToExe))
-				{
-                    actualPathToExe = FileFinderHelper.GetKnownActualPathToExe("Fiddler", exe, true); 
-                }
-
-				InvokerHelper.InvokeApplication(actualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                GeneralOptionsHelper.InvokeApplication(VSPackage.Options.ActualPathToExe, Vsix.Name, CommonConstants.FiddlerOptionsName);
+                ChaseRating();
             }
             catch (Exception ex)
             {
                 new FilePrompterHelper(Vsix.Name, null).InformUnexpectedError(ex);
             }
+        }
+
+        public static void PersistVSToolOptions(string fileName)
+        {
+            GeneralOptions.PersistVSToolOptions(fileName);
+        }
+
+        internal void ChaseRating( )
+        {
+            var packageRatingChaser = new PackageRatingChaser();
+            packageRatingChaser.Hunt(_hiddenChaserOptions);
         }
     }
 }

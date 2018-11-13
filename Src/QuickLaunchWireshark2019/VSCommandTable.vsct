@@ -14,7 +14,7 @@
         </Strings>
       </Menu>
     </Menus>
-    
+
     <Groups>
       <Group guid="guidQuickButtonCommandPackageCmdSet" id="ToolsMenuQuickLaunch" priority="0x9500">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
@@ -35,14 +35,14 @@
       <Button guid="guidQuickButtonCommandPackageCmdSet" id="QuickButtonCommandId" priority="0x0100" type="Button">
         <Parent guid="guidQuickButtonCommandPackageCmdSet" id="QLToolbarGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
-        <Strings> 
+        <Strings>
           <ButtonText>Open Fiddler</ButtonText>
         </Strings>
       </Button>
     </Buttons>
-    
+
     <Bitmaps>
-          <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
+      <Bitmap guid="guidImages" href="Resources\VsixCommandIcon_16x16.png" usedList="bmpPic1"/>
     </Bitmaps>
   </Commands>
 
@@ -58,5 +58,5 @@
       <IDSymbol name="bmpPic1" value="1" />
     </GuidSymbol>
   </Symbols>
-  
+
 </CommandTable>
