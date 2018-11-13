@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace QuickLaunch.Fiddler.Commands
+namespace QuickLaunch.Common
 {
     public static class FileFinderHelper
     {

@@ -55,7 +55,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\FileFinderHelper.cs" />
     <Compile Include="Commands\InvokerHelper.cs" />
     <Compile Include="Commands\QuickButtonCommand.cs" />
     <Compile Include="Options\GeneralOptionsUserControl.cs">

@@ -9,7 +9,7 @@ namespace QuickLaunch.Fiddler.Commands
 {
     public static class InvokerHelper
     {
-		public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
+        public static void InvokeApplication(string actualPathToExe, string extensionName, string optionsName)
         {
             var invokeCommand = false;
 
@@ -21,7 +21,7 @@ namespace QuickLaunch.Fiddler.Commands
 
                 if (persistOptionsDto.Persist)
                 {
-                     PersistVSToolOptions(persistOptionsDto.ValueToPersist);
+                    PersistVSToolOptions(persistOptionsDto.ValueToPersist);
                 }
 
                 actualPathToExe = persistOptionsDto.ValueToPersist;
@@ -55,8 +55,6 @@ namespace QuickLaunch.Fiddler.Commands
                 var generalOptions = await GeneralOptions.GetLiveInstanceAsync();
                 generalOptions.ActualPathToExe = fileName;
                 await generalOptions.SaveAsync();
-                ///////////////////////////////await generalOptions.LoadAsync();/////////////////////////////////////////////////////////////////////this seems to be needed for the new options to load the 2nd time round
-                  //////////////////////////// GREGT NOLONGER TRUE ?????????????
             });
         }
 

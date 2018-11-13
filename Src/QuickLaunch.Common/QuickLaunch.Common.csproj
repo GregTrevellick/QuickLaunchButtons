@@ -47,6 +47,7 @@
     <Compile Include="CommonConstants.cs" />
     <Compile Include="ConstantsForAppCommon.cs" />
     <Compile Include="FileBrowseOutcomeDto.cs" />
+    <Compile Include="FileFinderHelper.cs" />
     <Compile Include="FilePrompterHelper.cs" />
     <Compile Include="InitialFolderType.cs" />
     <Compile Include="PersistOptionsDto.cs" />
