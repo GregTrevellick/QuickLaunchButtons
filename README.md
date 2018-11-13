@@ -85,8 +85,8 @@ Software License is available [here](/LICENSE.txt).
 
 ---------------------------------------
 
-[![Fiddler](Src/QuickLaunchFiddler/Resources/VsixExtensionIcon_90x90.png)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
-[![Wireshark](Src/QuickLaunchWireshark/Resources/VsixExtensionIcon_90x90.png)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
+[![Fiddler](Src/QuickLaunchFiddler2019/Resources/VsixExtensionIcon_90x90.png)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchFiddler)
+[![Wireshark](Src/QuickLaunchWireshark2019/Resources/VsixExtensionIcon_90x90.png)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.QuickLaunchWireshark)
 
 ## Legal
 
