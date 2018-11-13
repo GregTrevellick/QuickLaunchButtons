@@ -7,12 +7,12 @@ namespace QuickLaunch.Wireshark
 {
     static class Vsix
     {
-        public const string Id = "8848b323-a859-40fa-88ff-ae80d5ad6198";
+        public const string Id = "BDA39C0E-35E7-413C-A4FF-511A79DA0848";
         public const string Name = "Open Wireshark";
         public const string Description = @"Adds toolbar button and tools menu button to launch Wireshark";
         public const string Language = "en-US";
         public const string Version = "1.1.1";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "quicklaunch, quick launch, quick, launch, Wireshark";
+        public const string Tags = "quicklaunch, quick launch, Wireshark";
     }
 }
