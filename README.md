@@ -6,11 +6,8 @@
 # Quick Launch Buttons
 
 <!--BadgesSTART-->
-[![Read Me Synchronizer](https://img.shields.io/badge/-powered%20by%20read%20me%20synchronizer-brightgreen.svg)](https://github.com/undefined/ReadMeSynchronizer)
-<!-- Powered by https://github.com/undefined/ReadMeSynchronizer -->
-
-[Subscribe](https://github.com/GregTrevellick/QuickLaunchButtons/subscription) to receive notificatons.
-
+<!-- Powered by https://github.com/GregTrevellick/ReadMeSynchronizer -->
+[![Read Me Synchronizer](https://img.shields.io/badge/-powered%20by%20ReadMeSynchronizer-brightgreen.svg)](https://github.com/GregTrevellick/ReadMeSynchronizer)
 [![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/GregTrevellick/QuickLaunchButtons?branch=master)](https://bettercodehub.com/results/GregTrevellick/QuickLaunchButtons)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/def29563a15940cda03af19faac0e006)](https://www.codacy.com/project/gtrevellick/QuickLaunchButtons/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GregTrevellick/QuickLaunchButtons&amp;utm_campaign=Badge_Grade_Dashboard)
 
@@ -44,6 +41,8 @@
 [![Charity Ware](https://img.shields.io/badge/charity%20ware-thank%20you-brightgreen.svg)](https://github.com/GregTrevellick/MiscellaneousArtefacts/wiki/Charity-Ware)
 [![License](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 
+[Subscribe](https://github.com/GregTrevellick/QuickLaunchButtons/subscription) to receive notificatons.
+
 [![Visual Studio Marketplace version](https://img.shields.io/badge/-OpenFiddler-%23e2165e.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenFiddler)
 [![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.OpenFiddler.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenFiddler)
 [![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.OpenFiddler.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenFiddler)
@@ -54,6 +53,7 @@
 [![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.OpenWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenWireshark)
 [![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.OpenWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenWireshark)
 [![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenWireshark.svg)](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenWireshark)
+
 
 
 <!--BadgesEND-->
