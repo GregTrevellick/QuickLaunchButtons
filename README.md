@@ -12,7 +12,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/def29563a15940cda03af19faac0e006)](https://www.codacy.com/project/gtrevellick/QuickLaunchButtons/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GregTrevellick/QuickLaunchButtons&amp;utm_campaign=Badge_Grade_Dashboard)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons/badge)](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons)
-[![InspecodeRocro Report](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/report?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8))](https://inspecode.rocro.com/reports/github.com/GregTrevellick/QuickLaunchButtons/branch/master/summary)
+[![InspecodeRocro Report](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/report?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8)](https://inspecode.rocro.com/reports/github.com/GregTrevellick/QuickLaunchButtons/branch/master/summary)
 
 
 [![GitHub top language](https://img.shields.io/github/languages/top/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
@@ -33,7 +33,7 @@
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/e8fq3ang07ahq8yf?svg=true)](https://ci.appveyor.com/project/GregTrevellick/QuickLaunchButtons)
 [![Appveyor unit tests](https://img.shields.io/appveyor/tests/GregTrevellick/QuickLaunchButtons.svg)](https://ci.appveyor.com/project/GregTrevellick/QuickLaunchButtons/build/tests)
 [![Azure Build Status](https://gregtrevellick.visualstudio.com/QuickLaunchButtons/_apis/build/status/QuickLaunchButtons)](https://gregtrevellick.visualstudio.com/QuickLaunchButtons/_build/latest?definitionId=17)
-[![InspecodeRocro Job Status](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/status?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8))](https://inspecode.rocro.com/jobs/github.com/GregTrevellick/QuickLaunchButtons/latest?completed=true)
+[![InspecodeRocro Job Status](https://inspecode.rocro.com/badges/github.com/GregTrevellick/QuickLaunchButtons/status?token=iuSqTJxsdcqiMo6lLf8ZjNtUCVUtrkEvwGR9wD6-6R8)](https://inspecode.rocro.com/jobs/github.com/GregTrevellick/QuickLaunchButtons/latest?completed=true)
 [![Hound](https://img.shields.io/badge/hound_ci-checked-brightgreen.svg)](https://houndci.com/)
 [![Access Lint github](https://img.shields.io/badge/a11y-checked-brightgreen.svg)](https://www.accesslint.com)
 [![ImgBot](https://img.shields.io/badge/images-optimized-brightgreen.svg)](https://imgbot.net/)
