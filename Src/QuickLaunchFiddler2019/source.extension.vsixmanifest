@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="8848b323-a859-40fa-88ff-ae80d5ad6198" Version="1.1.2" Language="en-US" Publisher="Greg Trevellick" />
+        <Identity Id="8848b323-a859-40fa-88ff-ae80d5ad6198" Version="1.1.3" Language="en-US" Publisher="Greg Trevellick" />
         <DisplayName>Open Fiddler</DisplayName>
         <Description xml:space="preserve">Adds toolbar button and tools menu button to launch Fiddler</Description>
         <MoreInfo>https://github.com/GregTrevellick/QuickLaunchButtons</MoreInfo>
