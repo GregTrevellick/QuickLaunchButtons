@@ -11,8 +11,8 @@ namespace QuickLaunch.Fiddler
         public const string Name = "Open Fiddler";
         public const string Description = @"Adds toolbar button and tools menu button to launch Fiddler";
         public const string Language = "en-US";
-        public const string Version = "1.1.1";
+        public const string Version = "1.1.2";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "quicklaunch, quick launch, quick, launch, fiddler";
+        public const string Tags = "quicklaunch; quick launch; quick; launch; fiddler; telerik; telerik fiddler;";
     }
 }
