@@ -10,7 +10,7 @@ install:
     - choco install "sonarscanner-msbuild-net46" -y
 before_build:
     - cmd: nuget restore Src/QuickLaunchButtons.sln
-    - SonarScanner.MSBuild.exe begin /k:"QuickLaunchButtons" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=%my_encrypted_sonarqube_token%" /o:"gregtrevellick-github"
+    - SonarScanner.MSBuild.exe begin /key:"GregTrevellick_QuickLaunchButtons" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=%my_encrypted_sonarqube_token%" /o:"gregtrevellick-github"
 build:
     project: Src/QuickLaunchButtons.sln
     verbosity: minimal
