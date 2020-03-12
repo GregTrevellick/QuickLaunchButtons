@@ -14,6 +14,9 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons/badge)](https://www.codefactor.io/repository/github/GregTrevellick/QuickLaunchButtons)
 <!-- no md -->
 <!-- no md -->
+<!-- no md -->
+<!-- no md -->
+<!-- no md -->
 [![GitHub top language](https://img.shields.io/github/languages/top/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![Github language count](https://img.shields.io/github/languages/count/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons)
 [![GitHub issues](https://img.shields.io/github/issues-raw/GregTrevellick/QuickLaunchButtons.svg)](https://github.com/GregTrevellick/QuickLaunchButtons/issues)
